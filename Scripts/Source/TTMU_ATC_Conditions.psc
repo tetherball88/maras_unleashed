@@ -1,9 +1,15 @@
 scriptname TTMU_ATC_Conditions extends Quest conditional
 
+ReferenceAlias Property Alias_Spouse Auto
+
 Perk Property TTMU_ATC_IntimidationMod auto
 GlobalVariable Property TTMU_ATC_SpeechEasy auto
 GlobalVariable Property TTMU_ATC_SpeechAverage auto
 GlobalVariable Property TTMU_ATC_SpeechHard auto
+
+Faction Property TTM_SpouseCheated auto
+Faction Property TTM_SpouseKnowsPlayerCheated auto
+Faction Property TTM_SpouseAffection auto
 
 ; 0 = UNDETECTED; 1 = DETECTED;
 Int Property DetectionState = 0 auto conditional
@@ -35,6 +41,79 @@ Function SetSpouseGuilt(Int guilt)
     CalculateLevels()
 EndFunction
 
+Function SetInitialScores()
+    Actor spouse = Alias_Spouse.GetActorReference()
+    int spouseCheated = spouse.GetFactionRank(TTM_SpouseCheated)
+    int spouseKnowsPlayerCheated = spouse.GetFactionRank(TTM_SpouseKnowsPlayerCheated)
+    int spouseAffection = spouse.GetFactionRank(TTM_SpouseAffection)
+    int temperament = MARAS.GetNpcCurrentTypeEnum(spouse, "temperament")
+    int guiltScore = 50
+    int stanceScore = 50
+    if(spouseCheated <= 0)
+        ;nothing
+    elseif(spouseCheated == 1)
+        guiltScore += 20
+        stanceScore += -15
+    elseif(spouseCheated <= 3)
+        guiltScore += 10
+        stanceScore += -5
+    elseif(spouseCheated <= 5)
+        guiltScore += 5
+        stanceScore += 5
+    else
+        guiltScore += -15
+        stanceScore += 20
+    endif
+
+    if(spouseKnowsPlayerCheated <= 0)
+        guiltScore += 15
+        stanceScore += -15
+    elseif(spouseKnowsPlayerCheated == 1)
+        guiltScore += -10
+        stanceScore += 10
+    elseif(spouseKnowsPlayerCheated <= 5)
+        guiltScore += -15
+        stanceScore += 15
+    else
+        guiltScore += -25
+        stanceScore += 20
+    endif
+
+    if(temperament == 0) ; proud
+        guiltScore += 10
+        stanceScore += 15
+    elseif(temperament == 1) ; humble
+        guiltScore += 15
+        stanceScore += -15
+    elseif(temperament == 2) ; jealous
+        guiltScore += 5
+        stanceScore += 10
+    elseif(temperament == 3) ; romantic
+        guiltScore += 15
+        stanceScore += -15
+    elseif(temperament == 4) ; independent
+        guiltScore += 5
+        stanceScore += 15
+    endif
+
+    if(spouseAffection < 25) ; estranged
+        guiltScore += -15
+        stanceScore += 20
+    elseif(spouseAffection < 50) ; troubled
+        guiltScore += -5
+        stanceScore += 10
+    elseif(spouseAffection < 75) ; content
+        guiltScore += 10
+        stanceScore += -5
+    else ; happy
+        guiltScore += 15
+        stanceScore += -15
+    endif
+
+    guiltScore = PapyrusUtil.ClampInt(guiltScore, 5, 95)
+    stanceScore = PapyrusUtil.ClampInt(stanceScore, 5, 95)
+EndFunction
+
 Function CalculateLevels()
     ; Simple example calculations
     if(SpouseGuilt >= 67)
@@ -51,6 +130,69 @@ Function CalculateLevels()
     else
         StanceLevel = 0
     endif
+
+    UpdatePersuasionIntimidationDifficulty()
+EndFunction
+
+Function UpdatePersuasionIntimidationDifficulty() 
+    Actor spouse = Alias_Spouse.GetActorReference()
+    int temperament = MARAS.GetNpcCurrentTypeEnum(spouse, "temperament")
+    int deltaPersuasion = 0
+    float deltaIntimidation = 0
+
+    
+    if(temperament == 0) ; proud
+        deltaPersuasion += 10
+        deltaIntimidation += -0.15
+    elseif(temperament == 1) ; humble
+        deltaPersuasion += -10
+        deltaIntimidation += 0.1
+    elseif(temperament == 2) ; jealous
+        deltaPersuasion += 10
+        deltaIntimidation += -0.1
+    elseif(temperament == 3) ; romantic
+        deltaPersuasion += -5
+        deltaIntimidation += -0.05
+    elseif(temperament == 4) ; independent
+        deltaPersuasion += 5
+        deltaIntimidation += -0.1
+    endif
+
+    if(GuiltLevel == 0) ; low
+        deltaPersuasion += 15
+        deltaIntimidation += -0.15
+    elseif(GuiltLevel == 2) ; high
+        deltaPersuasion += -10
+        deltaIntimidation += 0.15
+    endif
+
+    if(StanceLevel == 0) ; low
+        deltaPersuasion += -5
+        deltaIntimidation += 0.15
+    elseif(StanceLevel == 2) ; high
+        deltaPersuasion += 10
+        deltaIntimidation += -0.2
+    endif
+    
+    UpdateSpeechDifficulty(deltaPersuasion, TTMU_ATC_SpeechEasy)
+    UpdateSpeechDifficulty(deltaPersuasion, TTMU_ATC_SpeechAverage)
+    UpdateSpeechDifficulty(deltaPersuasion, TTMU_ATC_SpeechHard)
+    UpdateIntimidationDifficulty(deltaIntimidation)
+EndFunction
+
+Function UpdateSpeechDifficulty(int delta, GlobalVariable speechVar)
+    int currentVal = speechVar.GetValueInt()
+    currentVal += delta
+    if(currentVal < 0)
+        currentVal = 0
+    elseif(currentVal > 95)
+        currentVal = 95
+    endif
+    speechVar.SetValue(currentVal)
+EndFunction
+
+Function UpdateIntimidationDifficulty(float delta)
+    TTMU_ATC_IntimidationMod.SetNthEntryValue(0, 0, 1 + delta)
 EndFunction
 
 Function SetDetectionState(Int val)
