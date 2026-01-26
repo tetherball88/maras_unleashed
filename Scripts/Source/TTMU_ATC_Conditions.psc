@@ -14,22 +14,37 @@ Faction Property TTM_SpouseAffection auto
 ; 0 = UNDETECTED; 1 = DETECTED;
 Int Property DetectionState = 0 auto conditional
 
+; 0 - 100 scale
 Int Property SpouseStance = 0 auto conditional
+; 0 - 100 scale
 Int Property SpouseGuilt = 0 auto conditional
 
+; 0 = 0-33 Low; 1 = 34-66 Medium; 2 = 67-100 High
+; Low - doesn't feel guilty, High - feels very guilty
 Int Property GuiltLevel = 0 auto conditional
+; 0 = 0-33 Low; 1 = 34-66 Medium; 2 = 67-100 High
+; Low - Submissive, High - Confrontational
 Int Property StanceLevel = 0 auto conditional
 
-String Property EncounterState auto conditional
+; 0 - missed
+; 1 - pre
+; 2 - mid
+Int Property EncounterState auto conditional
+; failed join after refuse persuasion or intimidation
 Bool Property FinalJoinRefusal auto conditional
+; failed watch after refuse persuasion or intimidation
 Bool Property FinalWatchRefusal auto conditional
+; failed demand after refuse persuasion or intimidation
+Bool Property FinalDemandRefused auto conditional
 
-Int Property FinalJoinRefused auto conditional
-Int Property FinalWatchRefused auto conditional
-
+; secretly/agreed/persuaded/intimidated/stopped
 Int Property WatchedStatus auto conditional
+; agreed/persuaded/intimidated
 Int Property JoinedStatus auto conditional
+; agreed/persuaded/intimidated
 Int Property StoppedStatus auto conditional
+
+Bool Property DecidedToLeave auto conditional
 
 Function SetSpouseStance(Int stance)
     SpouseStance = stance
@@ -39,6 +54,16 @@ EndFunction
 Function SetSpouseGuilt(Int guilt)
     SpouseGuilt = guilt
     CalculateLevels()
+EndFunction
+
+Function ChangeSpouseGuild(int delta)
+    SpouseGuilt += delta
+    SetSpouseGuilt(SpouseGuilt)
+EndFunction
+
+Function ChangeSpouseStance(int delta)
+    SpouseStance += delta
+    SetSpouseStance(SpouseStance)
 EndFunction
 
 Function SetInitialScores()
@@ -199,16 +224,16 @@ Function SetDetectionState(Int val)
     DetectionState = val
 EndFunction
 
-Function SetEncounterState(String val)
+Function SetEncounterState(int val)
     EncounterState = val
 EndFunction
 
-Function SetFinalJoinRefusal(int val)
-    FinalJoinRefusal = val
+Function SetFinalJoinRefusal()
+    FinalJoinRefusal = true
 EndFunction
 
-Function SetFinalWatchRefusal(int val)
-    FinalWatchRefusal = val
+Function SetFinalWatchRefusal()
+    FinalWatchRefusal = true
 EndFunction
 
 Function SetWatchedStatus(int val)
@@ -223,8 +248,12 @@ Function SetStoppedStatus(int val)
     StoppedStatus = val
 EndFunction
 
+Function SetPlayerDecidedToLeave()
+    DecidedToLeave = true
+EndFunction
 
-
-
+Function SetFinalDemandRefusal()
+    FinalDemandRefused = true
+EndFunction
 
 
