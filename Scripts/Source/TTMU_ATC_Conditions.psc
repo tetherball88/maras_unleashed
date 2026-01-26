@@ -26,33 +26,49 @@ Int Property GuiltLevel = 0 auto conditional
 ; Low - Submissive, High - Confrontational
 Int Property StanceLevel = 0 auto conditional
 
-; 0 - missed
+; 0 - none
 ; 1 - pre
 ; 2 - mid
+; 3 - missed
 Int Property EncounterState auto conditional
 ; failed join after refuse persuasion or intimidation
 Bool Property FinalJoinRefusal auto conditional
+; failed watch to join after refuse persuasion or intimidation
+Bool Property FinalWatchToJoinRefusal auto conditional
 ; failed watch after refuse persuasion or intimidation
 Bool Property FinalWatchRefusal auto conditional
 ; failed demand after refuse persuasion or intimidation
 Bool Property FinalDemandRefused auto conditional
 
+; used ask branch
+Bool Property Asked auto conditional
+; used hurt branch
+Bool Property Hurt auto conditional
+
+; 0 - none
 ; 1 - agreed
 ; 2 - persuaded
 ; 3 - intimidated
 ; 4 - anyway
 ; 5 - stopped
 Int Property WatchedStatus auto conditional
+; 0 - none
 ; 1 - agreed
 ; 2 - persuaded
 ; 3 - intimidated
 Int Property JoinedStatus auto conditional
+; 0 - none
 ; 1 - agreed
 ; 2 - persuaded
 ; 3 - intimidated
 Int Property StoppedStatus auto conditional
 
 Bool Property DecidedToLeave auto conditional
+
+Bool Property PathToOpenRelationship auto conditional
+
+Bool Property ResolutionBlockOpen auto conditional
+Bool Property ResolutionBlockForgive auto conditional
 
 Function SetSpouseStance(Int stance)
     SpouseStance = stance
@@ -145,6 +161,22 @@ Function SetInitialScores()
 
     guiltScore = PapyrusUtil.ClampInt(guiltScore, 5, 95)
     stanceScore = PapyrusUtil.ClampInt(stanceScore, 5, 95)
+
+    SetSpouseGuilt(guiltScore)
+    SetSpouseStance(stanceScore)
+
+    EncounterState = 0
+    FinalJoinRefusal = false
+    FinalWatchRefusal = false
+    FinalWatchToJoinRefusal = false
+    FinalDemandRefused = false
+    PathToOpenRelationship = false
+    WatchedStatus = 0
+    JoinedStatus = 0
+    StoppedStatus = 0
+    DecidedToLeave = false
+    Asked = false
+    Hurt = false
 EndFunction
 
 Function CalculateLevels()
@@ -240,23 +272,33 @@ Function SetFinalJoinRefusal()
     FinalJoinRefusal = true
 EndFunction
 
+Function SetFinalWatchToJoinRefusal()
+    FinalWatchToJoinRefusal = true
+EndFunction
+
 Function SetFinalWatchRefusal()
     FinalWatchRefusal = true
 EndFunction
 
 Function SetWatchedStatus(int val)
     WatchedStatus = val
+    if(val != 0 && val != 5)
+        PathToOpenRelationship = true
+    endif
 EndFunction
 
 Function SetJoinedStatus(int val)
     JoinedStatus = val
+    if(val != 0)
+        PathToOpenRelationship = true
+    endif
 EndFunction
 
 Function SetStoppedStatus(int val)
     StoppedStatus = val
 EndFunction
 
-Function SetPlayerDecidedToLeave()
+Function SetDecidedToLeave()
     DecidedToLeave = true
 EndFunction
 
@@ -264,4 +306,23 @@ Function SetFinalDemandRefusal()
     FinalDemandRefused = true
 EndFunction
 
+Function SetAsked()
+    Asked = true
+EndFunction
 
+Function SetHurt()
+    Hurt = true
+EndFunction
+
+Function SetResolutionBlockOpen()
+    ResolutionBlockOpen = true
+EndFunction
+
+Function SetResolutionBlockForgive()
+    ResolutionBlockForgive = true
+EndFunction
+
+Function ResetResolutionBlocks()
+    ResolutionBlockOpen = false
+    ResolutionBlockForgive = false
+EndFunction
