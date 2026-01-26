@@ -11,33 +11,10 @@ string Property ActionType auto
 ; ACCEPT/HESITATE/REFUSE/
 string Property SpouseAnswerType auto
 FavorDialogueScript Property pFDS auto
-; Bool Property IsPersuasion auto
-; Bool Property IsIntimidation auto
-; Bool Property ConvinsionSuccess auto
+
 Int Property NextStage auto
-; Int Property GuiltChange auto
-; Int Property StanceChange auto
-; pre, mid, missed
-; String Property EncounterState auto
-
-; Bool Property Detected auto
-; Bool Property FinalDemandRefused auto
-; Bool Property FinalJoinRefused auto
-; Bool Property FinalWatchRefused auto
-
-; secretly/agreed/persuaded/intimidated/stopped/anyway
-String Property WatchedStatus auto
-; agreed/persuaded/intimidated
-String Property JoinedStatus auto
-; agreed/persuaded/intimidated
-String Property StoppedStatus auto
-
-; TTMU_ATC_Conditions atcConditions
-
-; Bool Property DecidedToLeave auto
 
 String previousBranch = ""
-String previousSpouseAnswerType = ""
 
 ;BEGIN FRAGMENT Fragment_0
 Function Fragment_0(ObjectReference akSpeakerRef)
@@ -81,6 +58,7 @@ Actor akSpeaker = akSpeakerRef as Actor
             ; Submission reinforces guilt and lowers defiance
             deltaGuilt += 10
             deltaStance += -10
+            atcConditions.SetStoppedStatus(1)
         elseif(SpouseAnswerType == "HESITATE")
             ; Neutral transition
             previousBranch = "DEMAND_HESITATE"
@@ -96,6 +74,7 @@ Actor akSpeaker = akSpeakerRef as Actor
             isSuccess = true
             ; Emotional appeal lands; guilt deepens
             deltaGuilt += 10
+            atcConditions.SetStoppedStatus(2)
         elseif(SpouseAnswerType == "REFUSE")
             ; Partial effect; spouse hardens slightly
             deltaGuilt += 5
@@ -109,6 +88,7 @@ Actor akSpeaker = akSpeakerRef as Actor
             isSuccess = true
             ; Threat works; spouse feels diminished
             deltaStance += -10
+            atcConditions.SetStoppedStatus(3)
         elseif(SpouseAnswerType == "REFUSE")
             ; Threat fails; spouse feels empowered
             deltaStance += 10
@@ -122,6 +102,7 @@ Actor akSpeaker = akSpeakerRef as Actor
             ; Breaking through resistance requires deep emotional impact
             deltaGuilt += 15
             deltaStance += -5
+            atcConditions.SetStoppedStatus(2)
         elseif(SpouseAnswerType == "REFUSE")
             ; Resistance validated
             deltaStance += 5
@@ -135,6 +116,7 @@ Actor akSpeaker = akSpeakerRef as Actor
             isSuccess = true
             ; Forceful success significantly diminishes spouse
             deltaStance += -15
+            atcConditions.SetStoppedStatus(3)
         elseif(SpouseAnswerType == "REFUSE")
             ; Failed threat backfires; spouse gains confidence, loses guilt
             deltaGuilt += -5
@@ -149,6 +131,7 @@ Actor akSpeaker = akSpeakerRef as Actor
         deltaStance += 5
         if(SpouseAnswerType == "ACCEPT")
             deltaStance += 5 ; Permission granted; slight empowerment
+            atcConditions.SetWatchedStatus(1)
         elseif(SpouseAnswerType == "HESITATE")
             deltaGuilt += 5 ; Uncertainty triggers self-reflection
         elseif(SpouseAnswerType == "REFUSE")
@@ -170,7 +153,8 @@ Actor akSpeaker = akSpeakerRef as Actor
 
     elseif(ActionType == "WATCH_CLARIFY")
         if(SpouseAnswerType == "ACCEPT")
-            deltaStance += 5 ; Agreeing after hesitation adds guilt
+            deltaGuilt += 5 ; Agreeing after hesitation adds guilt
+            atcConditions.SetWatchedStatus(1)
         elseif(SpouseAnswerType == "REFUSE")
             deltaStance += 5 ; Deciding to refuse feels empowering
         endif
@@ -183,8 +167,10 @@ Actor akSpeaker = akSpeakerRef as Actor
             ; Emotional appeal overcomes resistance
             deltaGuilt += 10
             deltaStance += -5
+            atcConditions.SetWatchedStatus(2)
         elseif(SpouseAnswerType == "REFUSE")
             deltaStance += 5 ; Boundary maintained
+            atcConditions.SetFinalWatchRefusal()
         endif
         previousBranch = "WATCH"
 
@@ -193,8 +179,12 @@ Actor akSpeaker = akSpeakerRef as Actor
         if(SpouseAnswerType == "ACCEPT")
             isSuccess = true
             deltaStance += -15 ; Forced compliance; significant stance loss
+            atcConditions.SetWatchedStatus(3)
         elseif(SpouseAnswerType == "REFUSE")
-            deltaStance += 15 ; Failed force; spouse empowered, guilt reduced
+            ; Failed force; spouse empowered, guilt reduced
+            deltaGuilt += -5
+            deltaStance += 15 
+            atcConditions.SetFinalWatchRefusal()
         endif
         previousBranch = "WATCH"
 
@@ -202,6 +192,8 @@ Actor akSpeaker = akSpeakerRef as Actor
         ; Spouse boundary violated; anger > guilt
         deltaGuilt += -5
         deltaStance += 10
+        atcConditions.SetWatchedStatus(4)
+
         previousBranch = "WATCH"
 
 
@@ -213,6 +205,7 @@ Actor akSpeaker = akSpeakerRef as Actor
             ; Guilt diminishes (normalized); empowerment increases
             deltaGuilt += -10
             deltaStance += 10
+            atcConditions.SetJoinedStatus(1)
         elseif(SpouseAnswerType == "HESITATE")
             deltaStance += 5 ; Uncertainty; slight empowerment from being desired
         elseif(SpouseAnswerType == "REFUSE")
@@ -234,6 +227,7 @@ Actor akSpeaker = akSpeakerRef as Actor
             ; Normalized; slight guilt relief
             deltaGuilt += -5
             deltaStance += 5 
+            atcConditions.SetJoinedStatus(2)
         elseif(SpouseAnswerType == "REFUSE")
             ; Guilt from almost agreeing; empowered by refusing
             deltaGuilt += 5
@@ -248,10 +242,12 @@ Actor akSpeaker = akSpeakerRef as Actor
             ; Guilt relief agrees on own terms
             deltaGuilt += -15
             deltaStance += 5 
+            atcConditions.SetJoinedStatus(2)
         elseif(SpouseAnswerType == "REFUSE")
             ; Maintained boundary; strong empowerment
             deltaGuilt += 5
             deltaStance += 10
+            atcConditions.SetFinalJoinRefusal()
         endif
         previousBranch = "JOIN"
 
@@ -262,10 +258,12 @@ Actor akSpeaker = akSpeakerRef as Actor
             ; Forced into something; guilt + major stance loss
             deltaGuilt += 10
             deltaStance += -20
+            atcConditions.SetJoinedStatus(3)
         elseif(SpouseAnswerType == "REFUSE")
             ; Failed force; anger replaces guilt, major empowerment
             deltaGuilt += -10
             deltaStance += 20
+            atcConditions.SetFinalJoinRefusal()
         endif
         previousBranch = "JOIN"
 
@@ -297,22 +295,21 @@ Actor akSpeaker = akSpeakerRef as Actor
 
         int spouseTemperament = MARAS.GetNpcCurrentTypeEnum(atcConditions.Alias_Spouse.GetActorReference(), "temperament")
         if(spouseTemperament == 0) ; proud
-            deltaGuilt += -5
-            deltaStance += 10
-        elseif(spouseTemperament == 1) ; humble
             deltaGuilt += 5
+            deltaStance += 15
+        elseif(spouseTemperament == 1) ; humble
+            deltaGuilt += 10
             deltaStance += -5
         elseif(spouseTemperament == 2) ; jealous
-            deltaGuilt += -5
+            deltaGuilt += 5
             deltaStance += 10
         elseif(spouseTemperament == 3) ; romantic
-            deltaGuilt += 10
-            deltaStance += -10
+            deltaGuilt += 15
+            deltaStance += -15
         elseif(spouseTemperament == 4) ; independent
-            deltaGuilt += 0
-            deltaStance += 5
+            deltaGuilt += 10
+            deltaStance += 10
         endif
-
         previousBranch = "LEAVE"
     endif
 
@@ -323,8 +320,6 @@ Actor akSpeaker = akSpeakerRef as Actor
             pFDS.Intimidate(akSpeaker)
         endif
     endif
-
-    previousSpouseAnswerType = SpouseAnswerType
 ;END CODE
 EndFunction
 ;END FRAGMENT

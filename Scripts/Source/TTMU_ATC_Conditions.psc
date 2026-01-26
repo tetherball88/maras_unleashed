@@ -37,11 +37,19 @@ Bool Property FinalWatchRefusal auto conditional
 ; failed demand after refuse persuasion or intimidation
 Bool Property FinalDemandRefused auto conditional
 
-; secretly/agreed/persuaded/intimidated/stopped
+; 1 - agreed
+; 2 - persuaded
+; 3 - intimidated
+; 4 - anyway
+; 5 - stopped
 Int Property WatchedStatus auto conditional
-; agreed/persuaded/intimidated
+; 1 - agreed
+; 2 - persuaded
+; 3 - intimidated
 Int Property JoinedStatus auto conditional
-; agreed/persuaded/intimidated
+; 1 - agreed
+; 2 - persuaded
+; 3 - intimidated
 Int Property StoppedStatus auto conditional
 
 Bool Property DecidedToLeave auto conditional
