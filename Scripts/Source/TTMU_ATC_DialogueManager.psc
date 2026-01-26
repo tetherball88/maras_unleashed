@@ -7,6 +7,7 @@ scriptname TTMU_ATC_DialogueManager extends TopicInfo
 ; DEMAND_BRANCH/DEMAND_HESITATE_INTIMIDATE/DEMAND_HESITATE_PERSUADE/DEMAND_REFUSE_INTIMIDATE/DEMAND_REFUSE_PERSUADE
 ; JOIN_BRANCH/JOIN_CLARIFY/JOIN_REFUSE_INTIMIDATE/JOIN_REFUSE_PERSUADE
 ; WATCH_BRANCH/WATCH_CLARIFY/WATCH_REFUSE_INTIMIDATE/WATCH_REFUSE_PERSUADE/WATCH_ANYWAY
+; WATCH_CHANGED_MIND/WATCH_CHANGED_MIND_JOIN/WATCH_CHANGED_MIND_JOIN_PERSUADE
 string Property ActionType auto
 ; ACCEPT/HESITATE/REFUSE/
 string Property SpouseAnswerType auto
@@ -311,6 +312,31 @@ Actor akSpeaker = akSpeakerRef as Actor
             deltaStance += 10
         endif
         previousBranch = "LEAVE"
+
+    elseif(ActionType == "WATCH_CHANGED_MIND")
+        deltaGuilt += -5
+        deltaStance += 10
+        previousBranch = "WATCH_CHANGED_MIND"
+
+    elseif(ActionType == "WATCH_CHANGED_MIND_JOIN")
+        if(SpouseAnswerType == "ACCEPT")
+            deltaGuilt += -15
+            deltaStance += 5
+            atcConditions.SetJoinedStatus(1)
+        elseif(SpouseAnswerType == "REFUSE")
+            deltaGuilt += -10
+            deltaStance += 10
+        endif
+
+    elseif(ActionType == "WATCH_CHANGED_MIND_JOIN_PERSUADE")
+        if(SpouseAnswerType == "ACCEPT")
+            deltaGuilt += -5
+            deltaStance += 5
+            atcConditions.SetJoinedStatus(2)
+        elseif(SpouseAnswerType == "REFUSE")
+            deltaStance += 10
+        endif
+    
     endif
 
     if(pFDS && isSuccess)
