@@ -21,6 +21,7 @@ String previousBranch = ""
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
+    Debug.Notification("Dialogue:" + akSpeaker.GetDisplayName() + " ActionType: " + ActionType + " SpouseAnswerType: " + SpouseAnswerType)
     Quest _self = GetOwningQuest()
     TTMU_ATC_Conditions atcConditions = _self as TTMU_ATC_Conditions
     bool isSuccess = false
@@ -371,6 +372,10 @@ Actor akSpeaker = akSpeakerRef as Actor
             pFDS.Intimidate(akSpeaker)
         endif
     endif
+
+    Debug.Notification("Dialogue:" + akSpeaker.GetDisplayName() + " deltaGuilt: " + deltaGuilt + " deltaStance: " + deltaStance)
+    atcConditions.ChangeSpouseGuild(deltaGuilt)
+    atcConditions.ChangeSpouseStance(deltaStance)
 ;END CODE
 EndFunction
 ;END FRAGMENT

@@ -9,8 +9,6 @@ scriptname TTMU_ATC_DialogueResolution extends TopicInfo
 ; DIVORCE_ASKED_OPEN_YES/DIVORCE_ASKED_OPEN_NO
 ; OPEN_ACCEPT/OPEN_PERSUADE_ACCEPT/OPEN_PERSUADE_REFUSE/OPEN_REFUSE
 string Property ActionType auto
-; ACCEPT/HESITATE/REFUSE/
-string Property SpouseAnswerType auto
 FavorDialogueScript Property pFDS auto
 
 Int Property NextStage auto
@@ -21,6 +19,7 @@ String previousBranch = ""
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
+    Debug.Notification("Resolution:" + akSpeaker.GetDisplayName() + " ActionType: " + ActionType)
     Quest conditionsQst = GetOwningQuest() as Quest
     TTMU_ATC_Conditions atcConditions = conditionsQst as TTMU_ATC_Conditions
 
