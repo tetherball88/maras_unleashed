@@ -71,16 +71,16 @@ Bool Property ResolutionBlockOpen auto conditional
 Bool Property ResolutionBlockForgive auto conditional
 
 Function SetSpouseStance(Int stance)
-    SpouseStance = stance
+    SpouseStance = PapyrusUtil.ClampInt(stance, 5, 95)
     CalculateLevels()
 EndFunction
 
 Function SetSpouseGuilt(Int guilt)
-    SpouseGuilt = guilt
+    SpouseGuilt = PapyrusUtil.ClampInt(guilt, 0, 100)
     CalculateLevels()
 EndFunction
 
-Function ChangeSpouseGuild(int delta)
+Function ChangeSpouseGuilt(int delta)
     SpouseGuilt += delta
     SetSpouseGuilt(SpouseGuilt)
 EndFunction
@@ -159,8 +159,15 @@ Function SetInitialScores()
         stanceScore += -15
     endif
 
-    guiltScore = PapyrusUtil.ClampInt(guiltScore, 5, 95)
-    stanceScore = PapyrusUtil.ClampInt(stanceScore, 5, 95)
+    if(self.GetStage() == 40)
+        
+    elseif(self.GetStage() == 50)
+        ; Caught during sex, high guilt; low stance
+        guiltScore += 20
+        stanceScore += -10 
+    endif
+
+    MiscUtil.PrintConsole("TTMU_ATC_Conditions - Initial SpouseGuilt: " + guiltScore + ", SpouseStance: " + stanceScore)
 
     SetSpouseGuilt(guiltScore)
     SetSpouseStance(stanceScore)
@@ -195,6 +202,8 @@ Function CalculateLevels()
     else
         StanceLevel = 0
     endif
+
+    MiscUtil.PrintConsole("TTMU_ATC_Conditions - GuiltLevel: " + GuiltLevel + ", StanceLevel: " + StanceLevel)
 
     UpdatePersuasionIntimidationDifficulty()
 EndFunction

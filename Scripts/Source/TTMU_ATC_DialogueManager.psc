@@ -21,7 +21,9 @@ String previousBranch = ""
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-    Debug.Notification("Dialogue:" + akSpeaker.GetDisplayName() + " ActionType: " + ActionType + " SpouseAnswerType: " + SpouseAnswerType)
+    Debug.Notification("Dialogue!!!!:" + akSpeaker.GetDisplayName() + " ActionType: " + ActionType + " SpouseAnswerType: " + SpouseAnswerType)
+    bool val = ActionType == "PRE_OPENING"
+    MiscUtil.PrintConsole("TTMU_ATC_DialogueManager - ActionType: " + val)
     Quest _self = GetOwningQuest()
     TTMU_ATC_Conditions atcConditions = _self as TTMU_ATC_Conditions
     bool isSuccess = false
@@ -29,20 +31,19 @@ Actor akSpeaker = akSpeakerRef as Actor
     bool isIntimidation = false
     int deltaGuilt = 0
     int deltaStance = 0
+    
     if(ActionType == "PRE_OPENING")
-        atcConditions.SetEncounterState(1)
-        atcConditions.SetInitialScores()
+        MiscUtil.PrintConsole("TTMU_ATC_DialogueManager - Starting PRE_OPENING")
         ; Caught during flirting, nothing happened yet, low guilt; low stance
         deltaGuilt += 5
         deltaStance += 5
+        atcConditions.SetEncounterState(1)
+        atcConditions.SetInitialScores()
         previousBranch = "OPENING"
 
     elseif(ActionType == "MID_OPENING")
         atcConditions.SetEncounterState(2)
         atcConditions.SetInitialScores()
-        ; Caught during sex, high guilt; low stance
-        deltaGuilt += 20
-        deltaStance += -10
         previousBranch = "OPENING"
 
     elseif(ActionType == "ASK")
@@ -374,7 +375,7 @@ Actor akSpeaker = akSpeakerRef as Actor
     endif
 
     Debug.Notification("Dialogue:" + akSpeaker.GetDisplayName() + " deltaGuilt: " + deltaGuilt + " deltaStance: " + deltaStance)
-    atcConditions.ChangeSpouseGuild(deltaGuilt)
+    atcConditions.ChangeSpouseGuilt(deltaGuilt)
     atcConditions.ChangeSpouseStance(deltaStance)
 ;END CODE
 EndFunction

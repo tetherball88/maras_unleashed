@@ -72,6 +72,7 @@ EndFunction
 Function Fragment_0()
 ;BEGIN CODE
     ; stage 0
+    SetupQuest()
     setStage(10)
 ;END CODE
 EndFunction
@@ -127,6 +128,9 @@ Function Fragment_11()
     ; stage 40
     SetObjectiveCompleted(30)
     SetObjectiveDisplayed(40)
+    ObjectReference bed = OFurniture.FindFurnitureOfType("bed", Alias_Spouse.GetActorReference(), 2000, 1000)
+    MiscUtil.PrintConsole("TTMU_ATC_Stages - Found bed: " + bed)
+    Alias_ClosesInnBed.ForceRefTo(bed)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -171,14 +175,26 @@ Function Fragment_14()
 EndFunction
 ;END FRAGMENT
 
+;BEGIN FRAGMENT Fragment_20
+Function Fragment_20()
+;BEGIN CODE
+    ; stage 80
+    CompleteAllObjectives()
+    SetObjectiveDisplayed(80)
+;END CODE
+EndFunction
+;END FRAGMENT
+
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
 
-Event OnInit()
-    TTM_Debug.debug("TTMU_ATC_Stages - OnInit")
+Function SetupQuest()
+    MiscUtil.PrintConsole("TTMU_ATC_Stages - OnInit")
     Quest _self = _self
     TTMU_ATC_Conditions atcConditions = _self as TTMU_ATC_Conditions
     atcConditions.SetInitialScores()
     atcConditions.ResetResolutionBlocks()
+    Actor spouse = Alias_Spouse.GetActorReference()
+    Actor innKeeper = Alias_ClosestInnKeeper.GetActorReference()
     Actor exPartner = Alias_ExPartner.GetActorReference()
     Actor finalPartner
     if(exPartner)
@@ -189,12 +205,16 @@ Event OnInit()
 
     Alias_FinalPartner.ForceRefTo(finalPartner)
 
-    Actor spouse = Alias_Spouse.GetActorReference()
-    Actor innKeeper = Alias_ClosestInnKeeper.GetActorReference()
+    ; todo restore on quest finish
+    Package homePackage = TTM_Data.GetHomeSandboxPackage()
+    MiscUtil.PrintConsole("TTMU_ATC_Stages - SetupQuest:" + ActorUtil.CountPackageOverride(spouse))
+    ActorUtil.RemovePackageOverride(spouse, homePackage)
+    spouse.EvaluatePackage()
+    MiscUtil.PrintConsole("TTMU_ATC_Stages - SetupQuest:" + ActorUtil.CountPackageOverride(spouse))
+    Utility.Wait(1.0)
+    
     spouse.MoveTo(innKeeper)
     finalPartner.MoveTo(innKeeper)
 
-    ; todo restore on quest finish
-    Package homePackage = TTM_Data.GetHomeSandboxPackage()
-    ActorUtil.RemovePackageOverride(spouse, homePackage)
-EndEvent
+    
+EndFunction

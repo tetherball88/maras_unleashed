@@ -1,0 +1,5 @@
+Version: 1
+topicInfos:
+  - id: 0x3BD|TT_MARAS_Unleashed.esp
+  scripts: 
+    - myScript.lua
