@@ -828,31 +828,31 @@ stateDiagram-v2
 
 | Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
 |-------------|-------------|--------------|---------------|
-| **Humble** | *"Don't... ah... don't look at me... I'm begging you... either end this or go... I can't bear your eyes..."* | *"Why are you... ah... still here? To watch me fall apart? Please... just... do something or leave..."* | *"I know what I am... ah... right now. You don't need to... to say it. Just... decide. Please."* |
-| **Proud** | *"I can't... ah... I can't meet your eyes. Don't make me speak... just... whatever you're going to do... do it..."* | *"This is my lowest... ah... moment. You've seen it. What more... what more do you want from me?"* | *"I have no pride left... ah... you've taken it all by standing there. Just... make a choice. Any choice."* |
-| **Jealous** | *"I'm sorry... ah... I'm so sorry... I needed... I just needed someone to want me... please... don't just stand there..."* | *"I know I've... ah... destroyed everything. Your silence is worse than screaming. Please... say something... do something..."* | *"I wanted you to hurt... ah... like I hurt. But this... seeing your face... I can't... I can't do this with you watching..."* |
-| **Romantic** | *"My love... ah... my heart... I'm so ashamed... please don't watch me like this... either hold me or let me go..."* | *"Every breath you take... ah... standing there... cuts me. I still love you... I do... please... don't just watch..."* | *"I wanted you to see... ah... how much I needed you. But not like this... gods, not like this... please..."* |
-| **Independent** | *"I should have... ah... told you. I know. I'm sorry... just... don't stand there in silence. Please."* | *"I made my choice... ah... but I didn't want... I never wanted you to see me like this. What do you want?"* | *"I won't beg... ah... but I'm asking. Don't just watch. It's worse than anything you could say."* |
+| **Humble** | *"Don't... don't look at me... I'm begging you... either end this or go... I can't bear your eyes..."* | *"Why are you... still here? To watch me fall apart? Please... just... do something or leave..."* | *"I know what I am... right now. You don't need to... to say it. Just... decide. Please."* |
+| **Proud** | *"I can't... I can't meet your eyes. Don't make me speak... just... whatever you're going to do... do it..."* | *"This is my lowest... moment. You've seen it. What more... what more do you want from me?"* | *"I have no pride left... you've taken it all by standing there. Just... make a choice. Any choice."* |
+| **Jealous** | *"I'm sorry... I'm so sorry... I needed... I just needed someone to want me... please... don't just stand there..."* | *"I know I've... destroyed everything. Your silence is worse than screaming. Please... say something... do something..."* | *"I wanted you to hurt... like I hurt. But this... seeing your face... I can't... I can't do this with you watching..."* |
+| **Romantic** | *"My love... my heart... I'm so ashamed... please don't watch me like this... either hold me or let me go..."* | *"Every breath you take... standing there... cuts me. I still love you... I do... please... don't just watch..."* | *"I wanted you to see... how much I needed you. But not like this... gods, not like this... please..."* |
+| **Independent** | *"I should have... told you. I know. I'm sorry... just... don't stand there in silence. Please."* | *"I made my choice... but I didn't want... I never wanted you to see me like this. What do you want?"* | *"I won't beg... but I'm asking. Don't just watch. It's worse than anything you could say."* |
 
 #### WATCH_CHANGE_MIND - GUILT MID (34-66)
 
 | Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
 |-------------|-------------|--------------|---------------|
-| **Humble** | *"You're still... ah... here. I don't know what to say to you anymore."* | *"I can feel you watching... ah... I don't know if I want you to stay or go."* | *"Make up your mind... ah... this limbo is its own kind of torture."* |
-| **Proud** | *"Your silence... ah... says everything. What do you want?"* | *"Standing there judging... ah... or deciding? Which is it?"* | *"I won't apologize... ah... but I won't pretend this is comfortable either. Well?"* |
-| **Jealous** | *"Now you know... ah... how it feels. To watch. To wonder. Doesn't it sting?"* | *"I spent months... ah... wondering about you. Now you get a taste. What will you do about it?"* | *"Watching hurts... ah... doesn't it? Good. Now you understand. So what now?"* |
-| **Romantic** | *"Part of me hoped... ah... you'd stop this. Part of me didn't. I don't know what I want anymore."* | *"I still feel something... ah... when you look at me. Even now. What does that make me?"* | *"We're broken... ah... aren't we? Can you fix this? Can anyone?"* |
-| **Independent** | *"You chose to watch... ah... so watch. Or change your mind. Your call."* | *"Didn't expect you... ah... to stay this long. Having second thoughts?"* | *"Words won't change... ah... what's happening. You know your choices."* |
+| **Humble** | *"You're still... here. I don't know what to say to you anymore."* | *"I can feel you watching... I don't know if I want you to stay or go."* | *"Make up your mind... this limbo is its own kind of torture."* |
+| **Proud** | *"Your silence... says everything. What do you want?"* | *"Standing there judging... or deciding? Which is it?"* | *"I won't apologize... but I won't pretend this is comfortable either. Well?"* |
+| **Jealous** | *"Now you know... how it feels. To watch. To wonder. Doesn't it sting?"* | *"I spent months... wondering about you. Now you get a taste. What will you do about it?"* | *"Watching hurts... doesn't it? Good. Now you understand. So what now?"* |
+| **Romantic** | *"Part of me hoped... you'd stop this. Part of me didn't. I don't know what I want anymore."* | *"I still feel something... when you look at me. Even now. What does that make me?"* | *"We're broken... aren't we? Can you fix this? Can anyone?"* |
+| **Independent** | *"You chose to watch... so watch. Or change your mind. Your call."* | *"Didn't expect you... to stay this long. Having second thoughts?"* | *"Words won't change... what's happening. You know your choices."* |
 
 #### WATCH_CHANGE_MIND - GUILT LOW (0-33)
 
 | Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
 |-------------|-------------|--------------|---------------|
-| **Humble** | *"Still here... ah... are you? Fine. Watch or don't."* | *"I've nothing... ah... to say to you right now. Stay or go."* | *"You wanted to see... ah... you're seeing. What else is there?"* |
-| **Proud** | *"Enjoying yourself... ah... I hope? Either join in or stop hovering."* | *"That look on your face... ah... I've stopped caring what it means. In or out?"* | *"You chose to watch... ah... so watch properly or leave. No half measures."* |
-| **Jealous** | *"This is what you get... ah... for all those nights I wondered where you were. Drink it in."* | *"Hurts, doesn't it... ah... watching? Now you know. Now you finally know."* | *"I hope every sound... ah... every moment burns into your skull. You earned this view."* |
-| **Romantic** | *"You stopped wanting me... ah... long ago. This is just... what's left. Stay or go. I don't care anymore."* | *"I used to dream... ah... of you watching me. Wanting me. This isn't how I imagined it."* | *"You had your chance... ah... to make me feel like this. You wasted it. So watch or leave."* |
-| **Independent** | *"My body... ah... my rules. You know that. Join or leave."* | *"No discussions... ah... not now. You see what's happening. Decide."* | *"Talk is pointless... ah... right now. You want in or you want out. Simple."* |
+| **Humble** | *"Still here... are you? Fine. Watch or don't."* | *"I've nothing... to say to you right now. Stay or go."* | *"You wanted to see... you're seeing. What else is there?"* |
+| **Proud** | *"Enjoying yourself... I hope? Either join in or stop hovering."* | *"That look on your face... I've stopped caring what it means. In or out?"* | *"You chose to watch... so watch properly or leave. No half measures."* |
+| **Jealous** | *"This is what you get... for all those nights I wondered where you were. Drink it in."* | *"Hurts, doesn't it... watching? Now you know. Now you finally know."* | *"I hope every sound... every moment burns into your skull. You earned this view."* |
+| **Romantic** | *"You stopped wanting me... long ago. This is just... what's left. Stay or go. I don't care anymore."* | *"I used to dream... of you watching me. Wanting me. This isn't how I imagined it."* | *"You had your chance... to make me feel like this. You wasted it. So watch or leave."* |
+| **Independent** | *"My body... my rules. You know that. Join or leave."* | *"No discussions... not now. You see what's happening. Decide."* | *"Talk is pointless... right now. You want in or you want out. Simple."* |
 
 </details>
 
@@ -1253,35 +1253,3 @@ RESOLUTION_DIV_ASK_OPEN --> [DivorcedState] : no
 
 
 </details>
-
-
-
-### GUILT_HIGH (67-100)
-
-| Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
-|-------------|-------------|--------------|---------------|
-| **Humble** | *""* | *""* | *""* |
-| **Proud** | *""* | *""* | *""* |
-| **Jealous** | *""* | *""* | *""* |
-| **Romantic** | *""* | *""* | *""* |
-| **Independent** | *""* | *""* | *""* |
-
-### GUILT_MID (34-66)
-
-| Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
-|-------------|-------------|--------------|---------------|
-| **Humble** | *""* | *""* | *""* |
-| **Proud** | *""* | *""* | *""* |
-| **Jealous** | *""* | *""* | *""* |
-| **Romantic** | *""* | *""* | *""* |
-| **Independent** | *""* | *""* | *""* |
-
-### GUILT_LOW (0-33)
-
-| Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
-|-------------|-------------|--------------|---------------|
-| **Humble** | *""* | *""* | *""* |
-| **Proud** | *""* | *""* | *""* |
-| **Jealous** | *""* | *""* | *""* |
-| **Romantic** | *""* | *""* | *""* |
-| **Independent** | *""* | *""* | *""* |
