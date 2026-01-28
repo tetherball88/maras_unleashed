@@ -35,31 +35,31 @@ stateDiagram-v2
 
 | Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
 |-------------|-------------|--------------|---------------|
-| **Humble** | *"I... You weren't supposed to... Gods, I don't know what I'm doing."* | *"Please, just... let me explain. This isn't... I didn't plan this."* | *"I know how this looks. I know. But you haven't exactly been... nevermind."* |
-| **Proud** | *"...You're here. I didn't expect... This isn't what I wanted you to see."* | *"Before you say anything... I know. I know what this is."* | *"Yes. You've caught me. And maybe part of me wanted you to."* |
-| **Jealous** | *"Don't. Don't look at me like that. I know what I'm doing is wrong."* | *"So now you know how it feels. To wonder. To see."* | *"You've no right to judge me. Not after what you've done."* |
-| **Romantic** | *"My heart... I don't know where it belongs anymore. I'm sorry you're seeing this."* | *"I still love you. I do. But something's been missing, and I... I'm sorry."* | *"Maybe I wanted you to find us. Maybe I needed you to see what you've been ignoring."* |
-| **Independent** | *"This is... complicated. I won't pretend it isn't."* | *"I should have talked to you first. I know that now."* | *"I'm not ashamed of wanting this. But I should have told you."* |
+| **Humble** | "Gods... you're here? I... I don't know what to say. I've shamed us both. Please, don't look at me like that..." | "Wait! It's not... I mean, I shouldn't be here. I was just leaving. Please, let's talk somewhere else, away from these eyes..." | "By the Eight... you weren't supposed to see this. I've been so weak. I'm so sorry... I've made a mess of everything." |
+| **Proud** | "You... here? This looks... damn it, it looks exactly like what it is. I won't lie to you, but I never meant for this." | "I... I didn't see you come in. Don't make a scene here. I've let things go too far... I know. Let me explain." | "Shit... it's you. Look, I've got no excuse that'll satisfy you right now. I've stepped out of line... and I know it." |
+| **Jealous** | "What are you... why are you following me? Gods, the timing... I was just... I'm the one who's usually worried about you! I feel sick..." | "You? Here? I... I was just talking! I swear! Don't look at me with those eyes... I know how this looks, and I hate myself." | "I can't believe you caught me like this. I've been so paranoid about you, and here I am... being the fool. I'm so sorry..." |
+| **Romantic** | "My heart... it nearly stopped. Why are you here? I've been so lonely, but this... this is a betrayal of everything we have." | "Oh no... no, no, no. I was just looking for a spark I thought we lost... but seeing you now... I've been so stupid..." | "You... you weren't meant to see this side of me. I've let my desires cloud my mind. Please... give me a chance to fix this." |
+| **Independent** | "By the Divines... I didn't hear you walk in. I... I needed something different, but I didn't think... gods, I've hurt you, haven't I?" | "You... caught me. I was just... I was looking for a way out of my own head. I'm sorry... I shouldn't have been so reckless." | "I... I didn't expect you. This is a mess. I've been trying to find myself, but this isn't the way... I know that now." |
 
 ### GUILT_MID (34-66)
 
 | Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
 |-------------|-------------|--------------|---------------|
-| **Humble** | *"...You're back early."* | *"I suppose there's no point hiding it now."* | *"Well. Now you know."* |
-| **Proud** | *"...Ah. You're here."* | *"I won't insult you by pretending this is something else."* | *"I'm not going to grovel. We both know why this happened."* |
-| **Jealous** | *"Surprised? You shouldn't be."* | *"Don't act wounded. We both know the state of things between us."* | *"What did you expect? That I'd wait forever while you did as you pleased?"* |
-| **Romantic** | *"I... didn't want you to find out this way."* | *"There's still something between us. But there's something here too. I don't know what to do."* | *"I've been lonely. So lonely. And they were here."* |
-| **Independent** | *"This doesn't have to be a problem."* | *"We can talk about this. Like adults."* | *"I have needs. You know that."* |
+| **Humble** | "Oh... you caught me. I was just... having a drink. Things got a bit out of hand... I didn't mean for it to go this far..." | "I... I didn't see you. I was just talking... but I guess it didn't look like just talking, did it? I'm sorry..." | "Gods... I'm so embarrassed. I shouldn't be here like this. I was just... feeling a bit neglected, I suppose..." |
+| **Proud** | "Well... this is awkward. I didn't think you'd be at this inn. Look, it's not what it looks like... mostly." | "You caught me off guard. I was just... enjoying the attention. Is that so wrong? I mean... I know it is, but..." | "I... I didn't expect to see you. Fine, I was flirting. It felt good to feel wanted... but I know I crossed a line." |
+| **Jealous** | "What are you doing here? Checking up on me? Well... I guess you had a reason to. I was just... I don't know..." | "You... here? I was just... I was angry at you, alright? I wanted to see if anyone else would notice me. I'm sorry..." | "So you saw. I... I wanted to feel something other than worry. It was a mistake... I shouldn't have done it." |
+| **Romantic** | "Oh... you. I was just... caught up in the moment. It didn't mean anything! I just... I missed the thrill, you know?" | "You... here? I was just... having a bit of fun. I didn't think it would hurt anyone... especially not you." | "I... I didn't see you come in. I was just... imagining things. It was just a bit of harmless flirting... I hope." |
+| **Independent** | "You... here? I was just... taking some time for myself. Things got a bit... heated. I didn't mean to upset you." | "Oh, hey... I didn't expect you. I was just... seeing what else was out there. It was a lapse in judgment... I'm sorry." | "I... I didn't think you'd mind. I was just... having a drink and talking. I didn't realize how it looked until now." |
 
 ### GUILT_LOW (0-33)
 
 | Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
 |-------------|-------------|--------------|---------------|
-| **Humble** | *"...I suppose you want me to explain."* | *"I'm not going to apologize. Not anymore."* | *"Things change. People change."* |
-| **Proud** | *"You're interrupting."* | *"Did you need something? We're busy."* | *"Either join us or leave. I'm not stopping."* |
-| **Jealous** | *"Now you know what it's like to walk in on something."* | *"Don't you dare look at me like that. Not after everything."* | *"Good. Watch. See how it feels."* |
-| **Romantic** | *"I thought I'd feel worse about this. I don't."* | *"I found something I was missing. I'm not giving it up."* | *"You had your chance to make me feel wanted. This is what's left."* |
-| **Independent** | *"This isn't betrayal. It's just... life."* | *"I do what I want. You knew that when you married me."* | *"Stay. Go. Your choice. But I'm not stopping for your comfort."* |
+| **Humble** | "You're here... I wasn't expecting that. Look, I'm just enjoying a bit of company. It's nice to feel seen for once..." | "Oh! You... I'm just being honest, I needed a bit of excitement. I didn't think you'd wander in here today..." | "Well... you caught me. I've been feeling a bit lonely, even with us. I didn't mean to hurt you, but I won't lie about it..." |
+| **Proud** | "There you are... I was wondering when you'd show up. I'm just having a conversation. Surely I'm allowed that much?" | "I didn't expect you here. But since you are... I like the attention, alright? It's been a long time since I felt this way..." | "You found me. Honestly... it's been nice feeling wanted. I'm not trying to hide it, I just wanted to feel alive again..." |
+| **Jealous** | "Oh, look who decided to show up. I was just seeing if I still had it... you're not the only one people look at, you know?" | "You're here? Good. Maybe now you'll see I have options too. It's just a bit of fun... don't make it more than it is..." | "I didn't think you'd care enough to find me. I was just... looking for what I don't get at home. Can you blame me?" |
+| **Romantic** | "You... I didn't think you'd come. I was just chasing a feeling... a bit of sweetness in a cold world. You understand, don't you?" | "Oh! I was just... getting lost in the words. It's been so long since someone looked at me like that. I didn't mean any harm..." | "There you are. I was just... indulging a small fantasy. It's not that I don't love you, I just... I needed to feel a spark..." |
+| **Independent** | "Caught me... I was just seeing what else the world has to offer. I need my space, and sometimes... I need a little more..." | "You're here. Well... I'm just living my life. I didn't think I had to account for every drink and every smile..." | "Oh, hey... I'm just exploring a bit. It doesn't change what we have, but I need to know I'm still my own person..." |
 
 **Exit:** → `PLAYER_ACTION_HUB`
 
@@ -68,35 +68,35 @@ stateDiagram-v2
 <details>
 <summary><strong>MID_Interrupt</strong> (Click to expand)</summary>
 
-#### GUILT_HIGH (67-100)
+### GUILT_HIGH (67-100)
 
 | Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
 |-------------|-------------|--------------|---------------|
-| **Humble** | *"Oh gods... ah... you're here... don't... don't look at me like that..."* | *"I know... ah... I know what you're seeing... I'm sorry..."* | *"You found me... ah... now you see what's become of me..."* |
-| **Proud** | *"...Ah... this isn't... what I wanted you to see..."* | *"Don't say anything... ah... not yet... not now..."* | *"Yes... ah... look at me... this is what your neglect bought..."* |
-| **Jealous** | *"I'm sorry... ah... I just needed... someone to want me..."* | *"Look at me... ah... look at what I've become..."* | *"I needed something... ah... anything... to feel alive again..."* |
-| **Romantic** | *"My love... ah... I still... I still love you... even now..."* | *"I'm so confused... ah... my body's here but my heart... my heart is with you..."* | *"I wanted you to find me... ah... I wanted you to see how much I needed you..."* |
-| **Independent** | *"This is... ah... not how I wanted to tell you..."* | *"I should have... ah... been honest with you... before..."* | *"I'm not ashamed of... ah... being fucked... only of lying about it..."* |
+| **Humble** | "Ah! N-no... gods, please! You weren't supposed to... stop, please! I... I've destroyed everything... forgive me..." | "Ungh... wait! No! You... you're here?! Please, look away! I... I didn't want this to happen, I swear by the Divines..." | "No! Gods, stop... please! I... I'm a monster... I can't believe you're seeing me like this... I'm so sorry..." |
+| **Proud** | "Gah! You... here?! Don't... don't look at me! Dammit, I... I've ruined it all, haven't I? Just... just get out!" | "Haah... wait! Shit... it's you. I... I can't even explain this. I've completely fucked up... I know... I know!" | "By the Eight... you?! Stop... just stop! I have no excuse... I've shamed myself and you. I... I'm finished..." |
+| **Jealous** | "Nngh... you?! Why now?! I... I only did this because... gods, I'm sick! Please, don't leave me like this!" | "Wait... ah! No! I... I thought you were... I was so angry, but not for this! Please... don't look at me!" | "You... you caught me? After everything I said about you? Gods... I... I deserve whatever you do to me now..." |
+| **Romantic** | "Oh! Ah... no! My love, wait! I... I was so lost... I didn't think... please, don't let this be the end!" | "Hah... n-no! It's you! I... I was chasing a dream and found a nightmare. Please... don't look at me with such hate..." | "No! I... I've betrayed us! I'm so sorry... I let my heart wander and it led me to this filth... please, wait!" |
+| **Independent** | "Ah! Gods... you?! I... I needed to feel something else, but not like this! Please... stop... I've made a mistake!" | "Shit! You... here?! I... I didn't think... I was just... oh gods, I've really done it now, haven't I?" | "Nngh... wait! I... I didn't want you to see. I needed my own life, but this... this is too much. I'm so sorry..." |
 
-#### GUILT_MID (34-66)
-
-| Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
-|-------------|-------------|--------------|---------------|
-| **Humble** | *"Ah... you're... you're here..."* | *"Well... ah... now you know..."* | *"Took you long enough... ah... to come looking for me..."* |
-| **Proud** | *"...Ah... terrible timing..."* | *"I'm... ah... a bit busy... as you can see..."* | *"Enjoying the view?... Ah... you should be..."* |
-| **Jealous** | *"I got tired... ah... of waiting for you..."* | *"I needed this... ah... needed to feel wanted..."* | *"You were never... ah... around when I needed you..."* |
-| **Romantic** | *"I still think of you... ah... even now... even with them..."* | *"My body is here... ah... but I don't know where my heart is anymore..."* | *"I needed to feel... ah... wanted... you stopped making me feel that way..."* |
-| **Independent** | *"Bodies have urges... ah... you understand..."* | *"We can talk... ah... or you can join... your call..."* | *"I'm getting what I need... ah... nothing more to it..."* |
-
-#### GUILT_LOW (0-33)
+### GUILT_MID (34-66)
 
 | Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
 |-------------|-------------|--------------|---------------|
-| **Humble** | *"...Ah... what do you want?"* | *"You can watch... ah... or leave... either way..."* | *"About time... ah... you figured it out..."* |
-| **Proud** | *"You're interrupting... ah... a very good time..."* | *"Something you need?... Ah... make it quick..."* | *"This is how... ah... it's supposed to feel... in case you forgot..."* |
-| **Jealous** | *"What?... Ah... don't act so shocked..."* | *"I got tired of... ah... being ignored..."* | *"You were never enough... ah... I found someone who is..."* |
-| **Romantic** | *"I feel more... ah... right now... than I ever did with you..."* | *"They know what I like... ah... you never bothered to learn..."* | *"See how I move for them?... Ah... I never moved like this for you..."* |
-| **Independent** | *"I fuck who I want... ah... always have..."* | *"Join us... ah... or close the door on your way out..."* | *"My body... ah... my choice... that was always the arrangement..."* |
+| **Humble** | "Oh! Ah... you're here. I... I don't know what to say. I was just... feeling so alone... please don't be mad..." | "Nngh... wait, stop! I... I didn't think you'd come looking. I'm sorry... I just... it felt so good for a moment..." | "Ah! You... caught me. I... I know I shouldn't be doing this. I've been a fool... I'm so sorry, truly..." |
+| **Proud** | "Haah... well. You found us. I... I didn't think you'd care enough to check this inn. Look... I just needed this." | "Shit... it's you. I'm not going to lie... I wanted this. But I didn't want you to see it. Can we just... talk later?" | "Oh... you. Fine, you caught me. I was enjoying myself... is that a crime? I mean... I know it's wrong, but still..." |
+| **Jealous** | "Ah! You?! Good! Now you know how it feels! Wait... no, I didn't mean that... I'm just... I'm sorry, alright?" | "Nngh... you're here. I was just... trying to forget about you for a second. It didn't work. Now look at us..." | "So you saw. I... I wanted to see if anyone else cared. I guess you do... since you're standing there staring..." |
+| **Romantic** | "Oh! Ah... you. I was just... caught up in the heat of it. It doesn't mean I don't love you! Please... understand..." | "Haah... wait! I... I just needed to feel that spark again. It's not what you think! Well... it is, but... oh gods..." | "You... here? I... I was just lost in the moment. I didn't think about the cost. I'm sorry... don't go..." |
+| **Independent** | "Shit! You... I didn't expect you. I was just... having a bit of fun. I didn't think it would be such a mess..." | "Ah! Well... you found me. I needed some space, and I found it here. I didn't mean to hurt you... really..." | "Nngh... you. I... I was just exploring something new. I didn't think you'd mind so much... we're still us, right?" |
+
+### GUILT_LOW (0-33)
+
+| Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
+|-------------|-------------|--------------|---------------|
+| **Humble** | "Oh... ah... you're here. Well... I guess you caught me. I was just... needing a bit of a change, you know?" | "Ah! You... I didn't think you'd show up here. I'm just... enjoying myself. Don't make it a whole thing..." | "Haah... so you saw. I... I've been feeling a bit bored, honestly. I didn't think you'd care all that much..." |
+| **Proud** | "Hah... well, look who it is. I was wondering if you'd ever notice me. I'm just having some fun... care to watch?" | "Oh, you're here. Well... I like the attention, what can I say? I didn't think I had to ask you for this..." | "So you found us. Honestly... it felt great. I'm not going to apologize for wanting to feel something real..." |
+| **Jealous** | "Nngh... see? I can find someone else too! You're not the only one. How does it feel to be the one watching?" | "Ah! You're here. Good. Maybe now you'll realize what you've been missing. I'm not sorry... I needed this." | "So you caught me. Finally. I was starting to think you didn't even care what I did in my spare time..." |
+| **Romantic** | "Oh! Ah... you. I was just... chasing a feeling. You haven't given me this in years. Can you really blame me?" | "Haah... you're here. It's just a bit of passion... something we've been lacking, don't you think? Don't be so stiff..." | "You... I didn't think you'd come. I was just... indulging a bit. It's only sex... it doesn't change my heart..." |
+| **Independent** | "Shit... you. Well... I'm my own person, aren't I? I needed this today. I didn't think I needed your permission..." | "Ah! Well... you found me. I'm just living my life. I didn't think I had to account for who I spend my nights with..." | "Nngh... you. I'm just having a bit of fun. It's not a big deal... unless you want to make it one, I suppose..." |
 
 **Exit:** → `PLAYER_ACTION_HUB`
 
@@ -317,7 +317,7 @@ if_state --> PLAYER_ACTION_HUB : fail
 
 | Temperament | Line |
 |-------------|------|
-| **Humble** | *"I— fine. You win. I'm stopping."* |
+| **Humble** | *"I...  fine. You win. I'm stopping."* |
 | **Proud** | *"...Don't think this is over. But fine."* |
 | **Jealous** | *"You always know how to push. Fine."* |
 | **Romantic** | *"That look in your eyes... alright. I'm stopping."* |
@@ -409,7 +409,7 @@ if_state --> PLAYER_ACTION_HUB : fail
 
 | Temperament | Line |
 |-------------|------|
-| **Humble** | *"I— yes. You're right. I'm stopping."* |
+| **Humble** | *"I...  yes. You're right. I'm stopping."* |
 | **Proud** | *"...Fine. You've made your point."* |
 | **Jealous** | *"...Alright. Alright. I'm stopping."* |
 | **Romantic** | *"I can see I've pushed you too far. I'll stop."* |
@@ -492,167 +492,170 @@ WATCH_ANYWAY --> [Watch_State]
 ```
 
 #### WATCH_BRANCH Compliance Decision Matrix
+
 | Guilt | Stance | Humble | Proud | Jealous | Romantic | Independent |
-|-------|--------|--------|----------|-------------|---------|-------|
-| **HIGH** | **LOW** | REFUSE | REFUSE | REFUSE | REFUSE | REFUSE |
-| **HIGH** | **MID** | HESITATE | HESITATE | HESITATE | HESITATE | HESITATE |
-| **HIGH** | **HIGH** | ACCEPT | ACCEPT | ACCEPT | ACCEPT | ACCEPT |
-| **MID** | **LOW** | HESITATE | REFUSE | REFUSE | REFUSE | REFUSE |
-| **MID** | **MID** | HESITATE | ACCEPT | HESITATE | HESITATE | HESITATE |
-| **MID** | **HIGH** | ACCEPT | ACCEPT | ACCEPT | ACCEPT | ACCEPT |
-| **LOW** | **LOW** | HESITATE | REFUSE | REFUSE | HESITATE | REFUSE |
-| **LOW** | **MID** | ACCEPT | ACCEPT | HESITATE | ACCEPT | HESITATE |
-| **LOW** | **HIGH** | ACCEPT | ACCEPT | ACCEPT | ACCEPT | ACCEPT |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **HIGH** | **LOW** | REFUSE | ACCEPT | HESITATE | REFUSE | ACCEPT |
+| **HIGH** | **MID** | ACCEPT | HESITATE | REFUSE | ACCEPT | HESITATE |
+| **HIGH** | **HIGH** | HESITATE | REFUSE | ACCEPT | HESITATE | REFUSE |
+| **MID** | **LOW** | ACCEPT | HESITATE | REFUSE | ACCEPT | HESITATE |
+| **MID** | **MID** | HESITATE | ACCEPT | ACCEPT | HESITATE | REFUSE |
+| **MID** | **HIGH** | REFUSE | REFUSE | HESITATE | REFUSE | ACCEPT |
+| **LOW** | **LOW** | ACCEPT | ACCEPT | REFUSE | ACCEPT | HESITATE |
+| **LOW** | **MID** | HESITATE | HESITATE | HESITATE | HESITATE | REFUSE |
+| **LOW** | **HIGH** | REFUSE | REFUSE | ACCEPT | REFUSE | ACCEPT |
 
 <details>
 <summary><strong>WATCH_BRANCH</strong> (Click to expand)</summary>
 
-**Player's line**: *"[Watch] Don't let me interrupt. "*
+**Player's line**: *"[Watch] So this is what you prefer? Fine... don't stop on my account. Go on."*
 
-#### WATCH_BRANCH - GUILT HIGH (67-100)
-
-| Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
-|-------------|-------------|--------------|---------------|
-| **Humble** | *"Please... I can't bear you seeing this. I'm so ashamed. Just go, I beg you."* **[REFUSE]** | *"You want me to continue? I... the shame is crushing me. But if you need to see what I've done..."* **[HESITATE]** | *"I deserve this. You watching my disgrace. Go on then... see what I am."* **[ACCEPT]** |
-| **Proud** | *"Don't... don't look at me like that. I know what I've done. I can't do this with your eyes on me."* **[REFUSE]** | *"You'd watch your spouse's shame? I... perhaps I've earned that. Perhaps you need to see."* **[HESITATE]** | *"Fine. I won't hide from what I've done. Watch. See my failure."* **[ACCEPT]** |
-| **Jealous** | *"No... I can't. Not with you standing there. The guilt is eating me alive already."* **[REFUSE]** | *"You'd watch? Without screaming? I don't... I thought I wanted you to hurt but not like this."* **[HESITATE]** | *"I know I have no right to ask anything of you. Watch then. I've earned your contempt."* **[ACCEPT]** |
-| **Romantic** | *"Please don't make me continue with you watching. My heart can't take it. I'm so sorry..."* **[REFUSE]** | *"You'd truly stay? I'm dying inside... but maybe you need to see what loneliness made of me."* **[HESITATE]** | *"I wanted you to find me. To see. Maybe then you'd understand... watch. Please."* **[ACCEPT]** |
-| **Independent** | *"No. I owe you more than a show. I owe you an explanation. This isn't right."* **[REFUSE]** | *"Watching? That's... I didn't expect that. I should have told you before. If this is what you need..."* **[HESITATE]** | *"I'm not proud of this. But I won't hide. Watch if you must."* **[ACCEPT]** |
-
-#### WATCH_BRANCH - GUILT MID (34-66)
+### GUILT_HIGH (67-100)
 
 | Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
 |-------------|-------------|--------------|---------------|
-| **Humble** | *"You're not going to shout? I don't understand... I thought you'd be furious."* **[HESITATE]** | *"Watch? I... part of me feels I should stop. Part of me doesn't want to."* **[HESITATE]** | *"Fine. See what I've become. Maybe then you'll understand why."* **[ACCEPT]** |
-| **Proud** | *"I'm not some spectacle for your... no. Either say something real or leave."* **[REFUSE]** | *"Watching? Hm. Didn't expect that from you. ...Alright. If that's what you want."* **[ACCEPT]** | *"Fine. Watch what happens when someone actually pays attention to me."* **[ACCEPT]** |
-| **Jealous** | *"Just watch? No rage? I don't want your cold eyes—I want you to feel something!"* **[REFUSE]** | *"You'd watch without a word? ...Fine. Maybe you should see how it feels."* **[HESITATE]** | *"Good. Burn it into your memory. Now you know what I've felt."* **[ACCEPT]** |
-| **Romantic** | *"That coldness hurts more than anger would. I can't continue with you watching like a stranger."* **[REFUSE]** | *"Don't interrupt? I... I don't know what I want anymore. Stay then. Stay."* **[HESITATE]** | *"Maybe you need to see what I've been craving. What you stopped giving me."* **[ACCEPT]** |
-| **Independent** | *"No. Watching isn't a conversation. We need to talk about this properly."* **[REFUSE]** | *"That's your choice? Unexpected. ...Fine. No more secrets between us."* **[HESITATE]** | *"Suit yourself. I won't pretend shame I don't fully feel."* **[ACCEPT]** |
+| **Humble** | "I've failed you... and you want to watch? I... I can't. The shame is already burning me alive. Please... just go..." **[REFUSE]** | "If... if this is the only way you'll stay... then watch. I've no right to deny you anything after this..." **[ACCEPT]** | "I... I don't understand. Are you trying to punish yourself? I... I can't breathe with you standing there..." **[HESITATE]** |
+| **Proud** | "I've lost the right to my pride... haven't I? If you want to see how low I've fallen... then look. I deserve to be seen like this..." **[ACCEPT]** | "I... I'm a mess. I can't do this while you're looking at me like I'm dirt. Just... give me a moment..." **[HESITATE]** | "No. I've fallen low, but I won't be a tavern show for the one I've betrayed. Leave... before I lose what's left." **[REFUSE]** |
+| **Jealous** | "You're... you're not even angry? You're just... staring? It's making me sick. I can't... I can't do this!" **[HESITATE]** | "Is this your revenge? Watching me rot? No... I won't let you turn my shame into your entertainment!" **[REFUSE]** | "Fine! Watch! See the filth I am! Maybe if you see it all, you'll finally understand how much I'm hurting!" **[ACCEPT]** |
+| **Romantic** | "Gods, no... please. Seeing the light die in your eyes while I do this... I can't. I'd rather die. Get out!" **[REFUSE]** | "I... I'll stay. If this is the only way I can still be yours... then watch. I'm so, so sorry..." **[ACCEPT]** | "This is twisted... you're hurting, and I'm the cause. How can we... I... I need to stop. This isn't right..." **[HESITATE]** |
+| **Independent** | "I... I've ruined everything, haven't I? If you want to see the end of us... then watch. I'm already dead inside..." **[ACCEPT]** | "Wait... I can't. I wanted to be free, not... whatever this is. Seeing you there... it's all hitting me now..." **[HESITATE]** | "No. I did this to escape... not to invite you into my sin. I can't be your monster today. Just go..." **[REFUSE]** |
 
-#### WATCH_BRANCH - GUILT LOW (0-33)
+### GUILT_MID (34-66)
 
 | Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
 |-------------|-------------|--------------|---------------|
-| **Humble** | *"Watch? I... wasn't expecting that. Are you certain?"* **[HESITATE]** | *"If that's what you want. I stopped worrying about your opinion."* **[ACCEPT]** | *"Fine. I've nothing to hide. Not anymore."* **[ACCEPT]** |
-| **Proud** | *"I've no interest in an audience. Either join in or find the door."* **[REFUSE]** | *"Watching your spouse with another? Ha. More spine than I thought. Fine."* **[ACCEPT]** | *"Good. See what you've been too absent to provide."* **[ACCEPT]** |
-| **Jealous** | *"No. I don't want you watching calmly. I want you to suffer! React!"* **[REFUSE]** | *"Just stand there? Fine. But don't think this makes us even. Not close."* **[HESITATE]** | *"Perfect. Watch every thrust. Remember this next time you ignore me."* **[ACCEPT]** |
-| **Romantic** | *"You'd watch? Not leave, not fight... just watch? I don't know what we are anymore."* **[HESITATE]** | *"Cold. But at least you're here. More than usual. Watch then."* **[ACCEPT]** | *"See how I move when someone actually wants me? Take notes."* **[ACCEPT]** |
-| **Independent** | *"Watching? No. I don't do performances. Make a real choice—join or leave."* **[REFUSE]** | *"Observing? Strange response. But it's your time to waste."* **[HESITATE]** | *"Suit yourself. My body, my choices. Always has been."* **[ACCEPT]** |
+| **Humble** | "I... I suppose I deserve the humiliation. If you want to watch... I won't stop. I'm already a mess..." **[ACCEPT]** | "Are you... sure? I don't want to make it worse for you. This feels... very strange. I'm not sure I can..." **[HESITATE]** | "No... please. It's bad enough I'm here. Having you watch is just... I can't do that to us. Please go..." **[REFUSE]** |
+| **Proud** | "I... I didn't expect that. You're actually... serious? Give me a moment to breathe... this is a lot..." **[HESITATE]** | "You want a show? Fine. I was enjoying myself anyway. Don't complain about what you see though..." **[ACCEPT]** | "Absolutely not. I'm not some common whore for you to gawk at while I'm with someone else. Have some respect!" **[REFUSE]** |
+| **Jealous** | "You're going to watch? What, is this some kind of thrill for you? No... I'm not doing this for your kicks!" **[REFUSE]** | "Fine! If you're going to be weird about it, then watch. See what I'm doing while you're off adventuring!" **[ACCEPT]** | "Wait... are you doing this to mock me? I can't tell if you're serious or just... I don't know anymore..." **[HESITATE]** |
+| **Romantic** | "You... you're staying? I... I suppose there's a beauty in the honesty of it. If you want me... then watch..." **[ACCEPT]** | "I... I want to, but I'm scared. Does this mean you forgive me, or do you hate me? I... I'm so confused..." **[HESITATE]** | "I can't. I wanted passion, not... whatever this is. It feels cold with you just standing there. Stop it..." **[REFUSE]** |
+| **Independent** | "You... want in on this? Or just to see? I... I need a second. This wasn't part of the plan tonight..." **[HESITATE]** | "No. I do what I want, but I'm not your puppet. If I wanted you here, I would've invited you. Get out." **[REFUSE]** | "Fair enough. You always did have a strange side. Watch all you like... I'm not going to stop now..." **[ACCEPT]** |
 
+### GUILT_LOW (0-33)
+
+| Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
+|-------------|-------------|--------------|---------------|
+| **Humble** | "Oh... well, if you really want to. I didn't think you'd be interested. It's... a bit embarrassing, but okay..." **[ACCEPT]** | "I... I don't know. It feels a bit mean to just... keep going. Are you sure you're okay with this?" **[HESITATE]** | "No, that's just... no. I'm not a performer. I was just having some fun. Go find your own drink..." **[REFUSE]** |
+| **Proud** | "Finally, you show some interest! Watch closely then... you might actually learn something tonight..." **[ACCEPT]** | "Hah! You want a front row seat? I... actually, no. That's a bit much, even for me. Maybe later..." **[HESITATE]** | "You're serious? Gods, you're pathetic. I'm not doing this so you can get off on it. Clear out!" **[REFUSE]** |
+| **Jealous** | "Wait... you're not even mad? You just want to watch? That's... that's just weird. I think I'm done here..." **[REFUSE]** | "I... I don't know what you're playing at. Are you trying to make me feel small? I need to think..." **[HESITATE]** | "Oh, you'd like that, wouldn't you? Fine. See what a real man/woman can do. Don't blink..." **[ACCEPT]** |
+| **Romantic** | "You... want to share the moment? I... I suppose that's one way to keep our fire alive. If you wish..." **[ACCEPT]** | "I... I'm not sure. It feels less like love and more like... something else. Give me a moment to decide..." **[HESITATE]** | "No. I wanted to feel special, not like some exhibit in a museum. This is supposed to be private!" **[REFUSE]** |
+| **Independent** | "I... don't really care if you watch or not. But it's a bit distracting, honestly. Give me a minute..." **[HESITATE]** | "No. I'm here for me, not for you. I don't need an audience to enjoy myself. Go away." **[REFUSE]** | "Heh... you always were full of surprises. Fine. Watch. I'm not going to let you ruin my night..." **[ACCEPT]** |
 </details>
 
 #### WATCH_CLARIFY Compliance Decision Matrix
+
 | Guilt | Stance | Humble | Proud | Jealous | Romantic | Independent |
-|-------|--------|--------|----------|-------------|---------|-------|
-| **HIGH** | **LOW** | ACCEPT | ACCEPT | REFUSE | ACCEPT | ACCEPT |
-| **HIGH** | **MID** | ACCEPT | ACCEPT | ACCEPT | ACCEPT | ACCEPT |
-| **HIGH** | **HIGH** | REFUSE | REFUSE | REFUSE | REFUSE | REFUSE |
-| **MID** | **LOW** | ACCEPT | ACCEPT | REFUSE | ACCEPT | ACCEPT |
-| **MID** | **MID** | ACCEPT | ACCEPT | ACCEPT | ACCEPT | ACCEPT |
-| **MID** | **HIGH** | ACCEPT | REFUSE | ACCEPT | REFUSE | REFUSE |
-| **LOW** | **LOW** | ACCEPT | REFUSE | REFUSE | ACCEPT | REFUSE |
-| **LOW** | **MID** | ACCEPT | ACCEPT | ACCEPT | ACCEPT | ACCEPT |
-| **LOW** | **HIGH** | ACCEPT | ACCEPT | ACCEPT | REFUSE | ACCEPT |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **HIGH** | **LOW** | REFUSE | ACCEPT | ACCEPT | ACCEPT | ACCEPT |
+| **HIGH** | **MID** | ACCEPT | REFUSE | ACCEPT | REFUSE | REFUSE |
+| **HIGH** | **HIGH** | ACCEPT | ACCEPT | REFUSE | ACCEPT | ACCEPT |
+| **MID** | **LOW** | ACCEPT | REFUSE | ACCEPT | ACCEPT | ACCEPT |
+| **MID** | **MID** | ACCEPT | ACCEPT | REFUSE | ACCEPT | ACCEPT |
+| **MID** | **HIGH** | REFUSE | ACCEPT | ACCEPT | REFUSE | REFUSE |
+| **LOW** | **LOW** | REFUSE | ACCEPT | ACCEPT | REFUSE | REFUSE |
+| **LOW** | **MID** | ACCEPT | ACCEPT | REFUSE | ACCEPT | ACCEPT |
+| **LOW** | **HIGH** | ACCEPT | REFUSE | ACCEPT | ACCEPT | ACCEPT |
 
 <details>
 <summary><strong>WATCH_CLARIFY Dialogues</strong> (Click to expand)</summary>
 
-**Player's line**: *"I mean it. Keep going."*
+**Player's line**: *"You wanted this, didn't you? Then show me why. Don't stop now."*
 
-#### WATCH_CLARIFY - GUILT HIGH (67-100)
-
-| Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
-|-------------|-------------|--------------|---------------|
-| **Humble** | *"Keep going? I... gods, the shame. But I've already damned myself. ...Alright."* **[ACCEPT]** | *"You truly want to see this? ...I deserve your judgment. Watch my sin."* **[ACCEPT]** | *"No. Please. I can't bear it. The guilt is already destroying me."* **[REFUSE]** |
-| **Proud** | *"I... you'd really make me? I've never felt so low. ...So be it. Watch my fall."* **[ACCEPT]** | *"Keep going with your eyes on me? ...I hate that I've brought us here. Fine."* **[ACCEPT]** | *"No. I've shamed myself enough. I won't add this to my sins."* **[REFUSE]** |
-| **Jealous** | *"I wanted to hurt you but not like this... not with you so calm. I can't."* **[REFUSE]** | *"Keep going? ...Fine. Watch what your coldness drove me to. I hate myself."* **[ACCEPT]** | *"I thought I wanted this but your silence is worse than rage. I can't."* **[REFUSE]** |
-| **Romantic** | *"You mean it? My heart is shattered... but if you need to see my weakness... alright."* **[ACCEPT]** | *"Keep going? I'm so confused... I love you still. But alright. Watch my sorrow."* **[ACCEPT]** | *"No. Even now I need more than cold observation. Please. React somehow."* **[REFUSE]** |
-| **Independent** | *"...I should have told you long ago. If watching is what you need to understand... fine."* **[ACCEPT]** | *"This wasn't how I wanted honesty between us. But alright. See everything."* **[ACCEPT]** | *"No. This needs words, not spectacle. We'll talk after. Properly."* **[REFUSE]** |
-
-#### WATCH_CLARIFY - GUILT MID (34-66)
+### GUILT_HIGH (67-100)
 
 | Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
 |-------------|-------------|--------------|---------------|
-| **Humble** | *"You really mean it? ...Alright. I'm tired of hiding anyway."* **[ACCEPT]** | *"Keep going? I... yes. Maybe you need to see this."* **[ACCEPT]** | *"Fine. See what your absence made of me. Judge if you must."* **[ACCEPT]** |
-| **Proud** | *"Hm. You've more steel than I credited you. ...Very well. Watch."* **[ACCEPT]** | *"Keep going? That's your response? ...Interesting. Fine."* **[ACCEPT]** | *"No. I won't be observed like some curious beast. Decide something real."* **[REFUSE]** |
-| **Jealous** | *"Still no fury? I don't want your calm! I want you to feel this!"* **[REFUSE]** | *"Keep going? ...Fine. Burn every moment into your skull."* **[ACCEPT]** | *"Good. Watch me get what you never gave. Remember it."* **[ACCEPT]** |
-| **Romantic** | *"That coldness wounds me still. But if you need this... stay."* **[ACCEPT]** | *"Keep going? I don't understand you... but alright. Watch what I needed."* **[ACCEPT]** | *"No. I need something from you. Anything. Not this emptiness."* **[REFUSE]** |
-| **Independent** | *"No pretense then. Alright—full honesty. Watch everything."* **[ACCEPT]** | *"Straightforward. I can respect that. Stay."* **[ACCEPT]** | *"No. Watching isn't engaging with this. Talk to me or leave."* **[REFUSE]** |
+| **Humble** | "I... I can't. The way you're looking at me... it makes me want to die. Please, don't stay. Just go..." **[REFUSE]** | "If... if you stay, I'll stay. I've ruined everything anyway. I'll do whatever you want... I deserve this shame." **[ACCEPT]** | "I'll stay. If you want to watch the end of us... then I won't stop you. I'll let the guilt consume me." **[ACCEPT]** |
+| **Proud** | "Look then! See the person who broke your heart! If this is how you want to remember me, then don't look away!" **[ACCEPT]** | "I... I'm a failure. But I won't stay here like a dog for you to stare at while I'm with another. I'm done." **[REFUSE]** | "You want to see the truth? Then look. I've shamed us both... I might as well let you see the end of it." **[ACCEPT]** |
+| **Jealous** | "I'll stay. I'll show you. If this is the only way you'll truly see me... then watch. I'm already dead inside." **[ACCEPT]** | "Is this what you want? To watch me rot? I'll stay... I'll stay because I'm terrified of you leaving for good." **[ACCEPT]** | "No! This is too much! I wanted you to notice me, but not like this... I can't... it hurts too much!" **[REFUSE]** |
+| **Romantic** | "I'll do it. I'll show you the passion I lost. It's a poison now... but if you want to see it, I'll stay." **[ACCEPT]** | "No... please. I can't do this while I see the light dying in your eyes. I have to stop. I'm so sorry..." **[REFUSE]** | "If this is the only way I can still be yours... then watch. I've betrayed you, and I'll bear your gaze." **[ACCEPT]** |
+| **Independent** | "You want to see the mess I've made? Look then. I've already lost you... I've nothing left to protect." **[ACCEPT]** | "No. I did this to find myself, not to be a show for your anger. I can't look at you while I do this. Stop." **[REFUSE]** | "I've destroyed your trust. If you want to watch the rest of me burn, then look. I'm not stopping for anything." **[ACCEPT]** |
 
-#### WATCH_CLARIFY - GUILT LOW (0-33)
+### GUILT_MID (34-66)
 
 | Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
 |-------------|-------------|--------------|---------------|
-| **Humble** | *"If watching is what you want. I've stopped caring what you think."* **[ACCEPT]** | *"Fine. Watch. Won't change anything between us."* **[ACCEPT]** | *"Keep going? Ha. I intend to. Get comfortable."* **[ACCEPT]** |
-| **Proud** | *"Watching isn't participating. Join or leave—I don't perform."* **[REFUSE]** | *"Ha. Didn't think you had it in you. Fine—observe."* **[ACCEPT]** | *"Good. See what you couldn't be bothered to give me."* **[ACCEPT]** |
-| **Jealous** | *"Still no rage? Useless. I wanted you to hurt, not stare!"* **[REFUSE]** | *"Fine. Watch every moment. Choke on it."* **[ACCEPT]** | *"Perfect. Watch me finish with someone who actually wanted me."* **[ACCEPT]** |
-| **Romantic** | *"You'd truly stay? Not leave? ...At least you're here. Fine."* **[ACCEPT]** | *"Cold, but present. More than I'm used to. Watch then."* **[ACCEPT]** | *"No. Even now I crave a reaction. This emptiness is worse than hatred."* **[REFUSE]** |
-| **Independent** | *"No performances. I said join or leave. Pick one."* **[REFUSE]** | *"Watching? Your time to waste. Don't expect me to care."* **[ACCEPT]** | *"Suit yourself. My body, my rules."* **[ACCEPT]** |
+| **Humble** | "You'd really stay? I... I don't deserve your patience. If you want to see what I've done, then I won't stop." **[ACCEPT]** | "Watch then. I've already failed as a spouse... I might as well let you see the truth of my failure." **[ACCEPT]** | "No. I wanted to feel alive, but not like this. Not with you watching. I'm so sorry... I'm done. Just go." **[REFUSE]** |
+| **Proud** | "I... I can't. Knowing you're standing there... I won't let you see me like this. I'm finished here." **[REFUSE]** | "I've crossed a line, I know it... but if you want to stay, I won't hide. See what I've done to us." **[ACCEPT]** | "You want to see what I found? Then look. I'm not stopping... even if it breaks us both. Watch." [ACCEPT] |
+| **Jealous** | "I'll stay. If you want to see what a little attention looks like, then don't look away. I'm not stopping." **[ACCEPT]** | "No. I wanted you to care, but not like this. Having you watch is just... it's making me feel sick. I'm done." **[REFUSE]** | "I'll do it. I'll show you why I felt so alone. If you can handle seeing me like this, I won't stop." **[ACCEPT]** |
+| **Romantic** | "Look at us... a tragedy in the making. If you want to see the fire I couldn't find with you, then stay. I'm not stopping." **[ACCEPT]** | "I've shamed our story, haven't I? If you want to see the passion that led me astray... then look. I won't hide it." **[ACCEPT]** | "I can't do this... seeing you there makes every touch feel like lead. I wanted a spark, not a curse. I'm done." **[REFUSE]** |
+| **Independent** | "You're staying? Fine. I'm not going to pretend I'm a saint just because you're standing there. Watch if you want." **[ACCEPT]** | "If you stay, you're seeing me at my most reckless. Fine. Look. I won't act like a coward now." **[ACCEPT]** | "I can't... the way you're looking at me... it's tearing me apart. I won't let you see me like this. Stop." **[REFUSE]** |
+
+### GUILT_LOW (0-33)
+
+| Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
+|-------------|-------------|--------------|---------------|
+| **Humble** | "I... I'm so confused. Why do you want to stay? It feels wrong... I don't think I can keep going..." **[REFUSE]** | "If it helps you understand... then watch. I was just... I was so lonely. I'll show you what I found." **[ACCEPT]** | "I'll stay. I didn't mean for you to find out, but since you're here... I'm not going to hide it anymore." **[ACCEPT]** |
+| **Proud** | "You're serious? You want to watch? Fine. I'm not ashamed of needing to be touched. Look all you want." **[ACCEPT]** | "I'll show you why I'm here. I'll show you what I was missing. Don't complain about the truth you see." **[ACCEPT]** | "No. This was for me. Having you stand there like a guard... it's ruined. I'm not doing this for you." **[REFUSE]** |
+| **Jealous** | "You want to see? Fine! Maybe you'll finally realize that I have needs too! Watch... see what I'm doing!" **[ACCEPT]** | "No. I wanted you to be jealous, not to watch. This is just... it's not working. I'm stopping now." **[REFUSE]** | "I'll show you. I'll show you everything you've ignored. If you want to stay, then see what I've become." **[ACCEPT]** |
+| **Romantic** | "I can't... the way you're looking at me... it's tearing my soul apart. I won't let you see me like this. Stop." **[REFUSE]** | "I'll stay. I'll show you the spark I found. Maybe it'll remind you of how we used to look at each other." **[ACCEPT]** | "If you want to see me lost in someone else... then look. I'm not going to stop just because you're here." **[ACCEPT]** |
+| **Independent** | "No. I was looking for freedom, but not at the cost of your respect. I can't do this with you there. Stop." **[REFUSE]** | "I'll stay. I'll show you what I was looking for. It's a mess, I know... but I won't turn my back on you." **[ACCEPT]** | "You got it. I'll show you why I love the thrill of someone new. I'm not stopping for you or anyone." **[ACCEPT]** |
 
 </details>
 
 <details>
 <summary><strong>WATCH_REFUSE</strong> (Click to expand)</summary>
 
-**Player's line**: *"[Persuade] I'm not here to judge. I just need to see this."*
+**Player's line**: *"[Persuade] We don't have to follow the old rules. Let's see where this goes."*
 
 #### WATCH_REFUSE_PERSUADE Success
 
 | Temperament | Line |
 |-------------|------|
-| **Humble** | *"You need to see? ...Alright. I can't deny you that. Watch what I've done to us."* |
-| **Proud** | *"Not judging? ...We'll see about that. But fine. Watch. Don't say I didn't warn you."* |
-| **Jealous** | *"No judgment? We both know that's a lie. But fine. Watch. See everything."* |
-| **Romantic** | *"You need to understand? ...Part of me hoped you would. Watch then. See my loneliness."* |
-| **Independent** | *"Fair enough. No judgment works both ways. Watch everything. No hiding."* |
+| **Humble** | "If... if this truly pleases you, then I won't stop. I just want to make you happy, even like this." |
+| **Proud** | "A new set of rules, then? Fine. If you're bold enough to watch, I'm bold enough to give you a show." |
+| **Jealous** | "You aren't even angry? Fine. If you want to see what you're missing, I'll make sure you see every second." |
+| **Romantic** | "I never thought you'd be so... open. If this is our new truth, then I want you to see everything." |
+| **Independent** | "I like that idea. No more hiding, no more guilt. If you want to watch the fire, then don't look away." |
 
 #### WATCH_REFUSE_PERSUADE Failure
 
 | Temperament | Line |
 |-------------|------|
-| **Humble** | *"I can't. Your calm eyes on me... it's worse than screaming. Please, just react."* |
-| **Proud** | *"No. I won't be studied like some curiosity. Fight me or leave me be."* |
-| **Jealous** | *"Need? What about my need for you to feel this? I won't perform for your dead eyes."* |
-| **Romantic** | *"I don't want understanding. I want you to hurt like I hurt. React. Please."* |
-| **Independent** | *"No. Watching without feeling is worse than leaving. Give me something real."* |
+| **Humble** | "I can't... this isn't right. I've already hurt you enough, I won't turn our marriage into a spectacle." |
+| **Proud** | "You think I'm some toy for your amusement? I'm not doing this for you. Get out." |
+| **Jealous** | "Is that all I am to you? A performance? You clearly never cared about me at all." |
+| **Romantic** | "The 'old rules' were about love and trust. If those are gone, then there's nothing left for us here." |
+| **Independent** | "I didn't do this to start a new 'arrangement' with you. This is my life, and I'm not doing it on your terms." |
 
 
-**Player's line**: *"[Intimidate] I'll watch if I want. You don't get to decide that."*
+**Player's line**: *"[Intimidate] You lost your right to privacy the moment you walked in here."*
 
 #### WATCH_REFUSE_INTIMIDATE Success
 
 | Temperament | Line |
 |-------------|------|
-| **Humble** | *"...You're right. I can't stop you. I can't stop anything anymore. Watch."* |
-| **Proud** | *"...Fine. You want to assert yourself now? Now? ...Watch then. Have your victory."* |
-| **Jealous** | *"...Damn you. You always get what you want, don't you? Fine. Watch. Choke on it."* |
-| **Romantic** | *"...You'd force this? ...Fine. Watch. See what we've become. Both of us."* |
-| **Independent** | *"...Fair point. I can't control your eyes. Watch. Your choice, your burden."* |
+| **Humble** | "You're right... I have no excuses. If this is the price of my betrayal, then I'll stay. I'll do whatever you say." |
+| **Proud** | "Fine. You want to see me like this? Look all you want. I won't hide my face from you." |
+| **Jealous** | "I see how it is. You want to own my shame, too. Go ahead then, watch. See exactly what I've done." |
+| **Romantic** | "Your voice... it's so cold. I've ruined everything, haven't I? I'll finish, if that's what it takes to satisfy you." |
+| **Independent** | "A harsh truth. I made my choice, and now I have to live with you watching it. Don't blink." |
 
 #### WATCH_REFUSE_INTIMIDATE Failure
 
 | Temperament | Line |
 |-------------|------|
-| **Humble** | *"No. For once in my life, no. You don't get to bully me into submission. Not now."* |
-| **Proud** | *"Threaten me? You think I'm afraid? I've already lost everything. Do your worst."* |
-| **Jealous** | *"Commands? Now you want control? Where was this fire when I needed it? Get out."* |
-| **Romantic** | *"You'd threaten me? Now? ...That tells me everything. We're done. Leave."* |
-| **Independent** | *"No. Intimidation doesn't work on me. Never has. Try something else or go."* |
+| **Humble** | "Please, don't talk to me like that. I know I sinned, but I'm still a person, not a display." |
+| **Proud** | "I may have strayed, but I am not your slave. You don't get to demand a performance from me." |
+| **Jealous** | "Privacy? You just want to feel powerful because you're hurting. I'm done. This is over." |
+| **Romantic** | "How can you be so cruel? I broke our vows, but you're breaking my soul. I won't let you watch me like this." |
+| **Independent** | "You don't own me, and you don't dictate my shame. If you won't leave, then I will." |
 
 </details>
 
 <details>
 <summary><strong>WATCH_ANYWAY</strong> (Click to expand)</summary>
 
-**Player's line**: *"[Stay anyway.]"*
+**Player's line**: *"You started this without my permission. I'll finish it on my terms."*
+
+#### WATCH_STAY_ANYWAY Responses
 
 | Temperament | Line |
 |-------------|------|
-| **Humble** | *"...Fine. I can't make you leave."* |
-| **Proud** | *"...Stubborn. Fine. Stay."* |
-| **Jealous** | *"...Want to suffer? Go ahead."* |
-| **Romantic** | *"...I don't know what you are to me anymore."* |
-| **Independent** | *"...Your choice."* |
+| **Humble** | "I... I understand. I brought this on myself. I'll try to continue, if that's what you demand of me." |
+| **Proud** | "Your terms? Fine. If you want to turn my mistake into your twisted little game, I won't stop you." |
+| **Jealous** | "So you'll just stand there and gloat? Fine. Stare until your eyes bleed for all I care." |
+| **Romantic** | "This is so cruel. You're turning what we had into a cold, heartless display. I hardly recognize you." |
+| **Independent** | "You can stay, but you can't force me to enjoy it. If you want to watch a ghost, then keep watching." |
 
 </details>
 
@@ -677,52 +680,52 @@ if_state --> PLAYER_ACTION_HUB : fail
 
 #### JOIN_BRANCH Compliance Decision Matrix
 
-| Guilt | Stance | Humble | Proud | Jealous | Romantic | Independent |
-|-------|--------|--------|----------|-------------|---------|-------|
-| **HIGH** | **LOW** | REFUSE | REFUSE | REFUSE | REFUSE | HESITATE |
-| **HIGH** | **MID** | REFUSE | REFUSE | REFUSE | REFUSE | HESITATE |
-| **HIGH** | **HIGH** | HESITATE | HESITATE | REFUSE | HESITATE | HESITATE |
-| **MID** | **LOW** | HESITATE | HESITATE | REFUSE | HESITATE | HESITATE |
-| **MID** | **MID** | HESITATE | ACCEPT | HESITATE | HESITATE | HESITATE |
-| **MID** | **HIGH** | ACCEPT | ACCEPT | HESITATE | ACCEPT | ACCEPT |
-| **LOW** | **LOW** | HESITATE | HESITATE | REFUSE | HESITATE | HESITATE |
-| **LOW** | **MID** | ACCEPT | ACCEPT | HESITATE | HESITATE | ACCEPT |
-| **LOW** | **HIGH** | ACCEPT | ACCEPT | ACCEPT | ACCEPT | ACCEPT |
+| Guilt    | Stance | Humble   | Proud    | Jealous  | Romantic | Independent |
+|----------|--------|----------|----------|----------|----------|-------------|
+| **HIGH** | LOW    | REFUSE   | REFUSE   | HESITATE | REFUSE   | REFUSE      |
+| **HIGH** | MID    | HESITATE | REFUSE   | REFUSE   | ACCEPT   | HESITATE    |
+| **HIGH** | HIGH   | HESITATE | HESITATE | ACCEPT   | HESITATE | ACCEPT      |
+| **MID**  | LOW    | HESITATE | HESITATE | ACCEPT   | ACCEPT   | ACCEPT      |
+| **MID**  | MID    | ACCEPT   | HESITATE | HESITATE | HESITATE | ACCEPT      |
+| **MID**  | HIGH   | REFUSE   | ACCEPT   | REFUSE   | ACCEPT   | HESITATE    |
+| **LOW**  | LOW    | ACCEPT   | ACCEPT   | HESITATE | REFUSE   | HESITATE    |
+| **LOW**  | MID    | HESITATE | HESITATE | ACCEPT   | ACCEPT   | ACCEPT      |
+| **LOW**  | HIGH   | ACCEPT   | REFUSE   | HESITATE | HESITATE | ACCEPT      |
 
 <details>
 <summary><strong>JOIN_BRANCH</strong> (Click to expand)</summary>
 
-**Player's line**: *"[Join] Well, if we're throwing rules out... room for one more?"*
+**Player's line**: *"[Join] Well, if we're throwing rules out... I'm not staying on the sidelines."*
 
 #### JOIN_BRANCH - GUILT HIGH (67-100)
 
 | Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
 |-------------|-------------|--------------|---------------|
-| **Humble** | *"Join? No... no, I can't. I'm too ashamed. Please don't ask that."* **[REFUSE]** | *"How can you even ask that? I'm falling apart here. No."* **[REFUSE]** | *"You want to... is this some kind of test? I don't understand."* **[HESITATE]** |
-| **Proud** | *"You think I'd let you join after catching me like this? No."* **[REFUSE]** | *"Absolutely not. You don't get to turn my shame into your game."* **[REFUSE]** | *"Join? After this? ...What exactly are you playing at?"* **[HESITATE]** |
-| **Jealous** | *"Join us? After everything you've done to me? You've got nerve."* **[REFUSE]** | *"No. You don't get to twist this into something you control."* **[REFUSE]** | *"Ha! Now you want in? After ignoring me all this time? No."* **[REFUSE]** |
-| **Romantic** | *"How can you ask that? My heart is breaking and you want to... no."* **[REFUSE]** | *"Join? Is that all this means to you? Just bodies? No."* **[REFUSE]** | *"You want to join us? I... I don't know what to feel."* **[HESITATE]** |
-| **Independent** | *"That's... unexpected. You're actually serious about this?"* **[HESITATE]** | *"Hm. Didn't see that coming. You really mean it?"* **[HESITATE]** | *"Interesting proposition. You sure you know what you're asking?"* **[HESITATE]** |
+| **Humble** | *"No... don't. I don't deserve your touch after this. Just... just leave me to my shame."* **[REFUSE]** | *"You... you'd still want me? Even like this? I don't... Gods, I don't know what's right anymore."* **[HESITATE]** | *"You'd really... with me still...? I never thought you'd want me again, let alone like this..."* **[HESITATE]** |
+| **Proud** | *"No. I can't. Not when you've already caught me like some... some common whore."* **[REFUSE]** | *"This isn't... no. I wronged you, but I won't compound it by turning this into something worse."* **[REFUSE]** | *"You're serious? I... I don't know. This wasn't how I imagined... damn it, is this what we've become?"* **[HESITATE]** |
+| **Jealous** | *"Join? Now? I... part of me wants you here, but part of me can't stand you seeing me used like this."* **[HESITATE]** | *"No. I did this, not you. I won't have you lowering yourself because of my weakness."* **[REFUSE]** | *"You want in? Then come here. Maybe it'll hurt less if we're both falling together instead of me alone."* **[ACCEPT]** |
+| **Romantic** | *"Not like this... not when I've already broken everything between us. I couldn't bear it."* **[REFUSE]** | *"Even now you want me? I'm still... oh gods, yes. But I hate myself for saying it while I'm..."* **[ACCEPT]** | *"You're really offering this? I want to say yes, but what does that make us? Are we healing or just... destroying differently?"* **[HESITATE]** |
+| **Independent** | *"I... no. Don't do this because of what I did. I can't... not with you watching me like this."* **[REFUSE]** | *"You still want me even seeing this? I... damn it, I don't know if I deserve that from you."* **[HESITATE]** | *"Damn it... I never wanted you to see me like this. But if you're offering, I won't turn you away."* **[ACCEPT]** |
 
 #### JOIN_BRANCH - GUILT MID (34-66)
 
 | Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
 |-------------|-------------|--------------|---------------|
-| **Humble** | *"You want to... join? I... I don't know what to say."* **[HESITATE]** | *"Room for one more? Are you mocking me or do you mean it?"* **[HESITATE]** | *"Rules? We threw those out long ago. Come here then."* **[ACCEPT]** |
-| **Proud** | *"Join us? That's not what I expected from you."* **[HESITATE]** | *"Hm. Didn't expect that. Fine. Get over here."* **[ACCEPT]** | *"Now you're thinking. Finally. Come join us."* **[ACCEPT]** |
-| **Jealous** | *"You want in now? After ignoring me so long? No."* **[REFUSE]** | *"You want in? What's your game here?"* **[HESITATE]** | *"Join? After everything? What are you after?"* **[HESITATE]** |
-| **Romantic** | *"You'd want that? Even now? I don't understand you."* **[HESITATE]** | *"Join us? Part of me wants that. Part of me is scared."* **[HESITATE]** | *"Maybe that's what we needed all along. Come here."* **[ACCEPT]** |
-| **Independent** | *"Didn't expect that from you. You sure about this?"* **[HESITATE]** | *"That's more like it. Get over here."* **[ACCEPT]** | *"Finally. Something we can both enjoy. Join in."* **[ACCEPT]** |
+| **Humble** | *"I... if you want to, I won't stop you. Maybe it's fair, after what you caught me doing."* **[HESITATE]** | *"You mean it? Then yes. Yes. Let's forget the rules tonight. Both of us."* **[ACCEPT]** | *"No. This doesn't make us even, it just makes everything worse. I won't drag you down with me."* **[REFUSE]** |
+| **Proud** | *"Wait. You're serious? I thought you'd... Gods, I don't know what I expected, but not this."* **[HESITATE]** | *"I don't understand. You caught me betraying you and now you want in? What are we even doing?"* **[HESITATE]** | *"Ha. Didn't expect that from you. Alright, you're in... but I'm not slowing down for anyone."* **[ACCEPT]** |
+| **Jealous** | *"So you're not disgusted? You actually... alright. I won't say no. Not to you."* **[ACCEPT]** | *"Wait, you're serious? You'd share me like this? I don't... that doesn't sound like you."* **[HESITATE]** | *"No. I don't want you like this. Not as some kind of revenge or... whatever this is."* **[REFUSE]** |
+| **Romantic** | *"You're not walking away? You still want this? Then yes... I need you closer than anyone else."* **[ACCEPT]** | *"Is this really what you want, or are you just trying to match what I did? I need to know."* **[HESITATE]** | *"Yes. Divines yes. If we're both breaking vows tonight, at least we're doing it together."* **[ACCEPT]** |
+| **Independent** | *"Hah. Didn't think you had it in you. Alright, I'm game if you are."* **[ACCEPT]** | *"You're really offering? Then yeah. Get in here. Let's see where this goes."* **[ACCEPT]** | *"Wait, you're actually offering? I thought I knew you, but... I need to understand what you're really asking."* **[HESITATE]** |
 
 #### JOIN_BRANCH - GUILT LOW (0-33)
 
 | Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
 |-------------|-------------|--------------|---------------|
-| **Humble** | *"You want to join? I... if you're sure about this."* **[HESITATE]** | *"Alright. If that's what you want. Come on then."* **[ACCEPT]** | *"Fine. Get over here. Let's do this."* **[ACCEPT]** |
-| **Proud** | *"Join? Interesting. More nerve than I gave you credit for."* **[HESITATE]** | *"There's the spirit. Get over here then."* **[ACCEPT]** | *"Good. I was hoping you'd say that. Come."* **[ACCEPT]** |
-| **Jealous** | *"Now you want to join? Where was this before? No."* **[REFUSE]** | *"Join now? After everything? Why should I let you?"* **[HESITATE]** | *"Ha. Fine. Let's see if you can keep up."* **[ACCEPT]** |
-| **Romantic** | *"You'd join? I don't know if that fixes things or breaks them."* **[HESITATE]** | *"Join? Maybe this is what we needed. I don't know."* **[HESITATE]** | *"Maybe this is what we were missing. Come here."* **[ACCEPT]** |
-| **Independent** | *"Hm. Wasn't expecting that. You serious?"* **[HESITATE]** | *"Works for me. Come on then."* **[ACCEPT]** | *"Now we're talking. Get over here."* **[ACCEPT]** |
+| **Humble** | *"If that's what you want, I won't argue. Never thought you'd be the type, but... come on then."* **[ACCEPT]** | *"You sure about this? Because once we cross this line together, there's no going back to how things were."* **[HESITATE]** | *"Alright. If we're doing this, we're doing it right. Get over here."* **[ACCEPT]** |
+| **Proud** | *"About time you stopped being so damn righteous. Yeah, get in here."* **[ACCEPT]** | *"You're confusing me. Is this some kind of test or do you actually mean it?"* **[HESITATE]** | *No. This is mine. You had your chance to be part of my life before you walked in here."* **[REFUSE]** |
+| **Jealous** | *"Is this you wanting me, or you wanting revenge? Because those are two very different things."* **[HESITATE]** | *"Oh, so NOW you want to play? Fine, but don't expect me to make it easy for you."* **[ACCEPT]** | *"Trying to even the score? That's not how this works, but... I'm curious where you're going with this."* **[HESITATE]** |
+| **Romantic** | *"No, love. I chased heat and found ashes. I won't pull you into this emptiness with me."* **[REFUSE]** | *"This is madness and I love it. Come here. Let's forget everything but this moment."* **[ACCEPT]** | *"Wait, is this really you talking? Or are you just trying to hurt me back? I need to know what this is."* **[HESITATE]** |
+| **Independent** | *"Huh. Didn't see that coming. You sure you're not just talking big? Because I can't tell if I like this idea or not."* **[HESITATE]** | *"Never thought I'd hear you say that. Yeah, let's do this. No regrets."* **[ACCEPT]** | *"So you want to join the chaos? Fine by me. Always knew you had this in you somewhere."* **[ACCEPT]** |
 
 </details>
 
@@ -1250,3 +1253,35 @@ RESOLUTION_DIV_ASK_OPEN --> [DivorcedState] : no
 
 
 </details>
+
+
+
+### GUILT_HIGH (67-100)
+
+| Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
+|-------------|-------------|--------------|---------------|
+| **Humble** | *""* | *""* | *""* |
+| **Proud** | *""* | *""* | *""* |
+| **Jealous** | *""* | *""* | *""* |
+| **Romantic** | *""* | *""* | *""* |
+| **Independent** | *""* | *""* | *""* |
+
+### GUILT_MID (34-66)
+
+| Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
+|-------------|-------------|--------------|---------------|
+| **Humble** | *""* | *""* | *""* |
+| **Proud** | *""* | *""* | *""* |
+| **Jealous** | *""* | *""* | *""* |
+| **Romantic** | *""* | *""* | *""* |
+| **Independent** | *""* | *""* | *""* |
+
+### GUILT_LOW (0-33)
+
+| Temperament | Stance 0-33 | Stance 34-66 | Stance 67-100 |
+|-------------|-------------|--------------|---------------|
+| **Humble** | *""* | *""* | *""* |
+| **Proud** | *""* | *""* | *""* |
+| **Jealous** | *""* | *""* | *""* |
+| **Romantic** | *""* | *""* | *""* |
+| **Independent** | *""* | *""* | *""* |
